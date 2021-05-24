@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>算法 on Example Site</title>
+    <link>https://5rLku.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 24 May 2021 15:49:57 +0800</lastBuildDate><atom:link href="https://5rLku.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A&#43;B Problem</title>
+      <link>https://5rLku.github.io/article/aplusb-problem/</link>
+      <pubDate>Mon, 24 May 2021 15:49:57 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/aplusb-problem/</guid>
+      <description>问题描述 给定两个数 a 和 b，计算他们的和
+基本思路 读取 a 和 b，计算他们的和 $result$ $$result = a + b$$
+通过代码 #include &amp;lt;iostream&amp;gt;#include &amp;lt;cstdio&amp;gt;using namespace std; int main() { int a, b; cin &amp;gt;&amp;gt; a &amp;gt;&amp;gt; b; cout &amp;lt;&amp;lt; a + b &amp;lt;&amp;lt; endl; return 0; } </description>
+    </item>
+    
+  </channel>
+</rss>
