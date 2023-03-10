@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='Ray Tracing 2 (Acceleration &amp; Radiometry)'><title>GAMES101_Lecture14</title>
+
+<link rel='canonical' href='https://5rLku.github.io/article/games101_lecture14/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='GAMES101_Lecture14'>
+<meta property='og:description' content='Ray Tracing 2 (Acceleration &amp; Radiometry)'>
+<meta property='og:url' content='https://5rLku.github.io/article/games101_lecture14/'>
+<meta property='og:site_name' content='5rLku'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='计算机图形学' /><meta property='article:tag' content='GAMES101' /><meta property='article:tag' content='课程笔记' /><meta property='article:published_time' content='2023-02-21T10:43:10&#43;08:00'/><meta property='article:modified_time' content='2023-02-21T10:43:10&#43;08:00'/>
+<meta name="twitter:title" content="GAMES101_Lecture14">
+<meta name="twitter:description" content="Ray Tracing 2 (Acceleration &amp; Radiometry)">
+    <link rel="shortcut icon" href="image/favicon.ico" />
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu2a10fa429deb4abe862cc42cef778dcc_17900_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://5rLku.github.io">5rLku</a></h1>
+        <h2 class="site-description">还是写下来印象才深刻</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://5rLku.github.io" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" >
+                技术
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/article/games101_lecture14/">GAMES101_Lecture14</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        Ray Tracing 2 (Acceleration &amp; Radiometry)
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Feb 21, 2023</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h1 id="ray-tracing-2-acceleration--radiometry">Ray Tracing 2 (Acceleration &amp; Radiometry)</h1>
+<h2 id="acceleration">Acceleration</h2>
+<h3 id="using-aabb">Using AABB</h3>
+<h4 id="uniform-grids">Uniform Grids</h4>
+<ul>
+<li>建立加速格子的预处理
+<ul>
+<li>找到包围盒（包围盒是大范围）</li>
+<li>划分格子</li>
+<li>记录存在物体的格子（注意是三角形网格，物体内部的格子不算存在）</li>
+<li>遍历光线走过的格子</li>
+<li>经过有物体的格子则和该格子中所有物体进行相交判断</li>
+<li>（与光线相交的下一个格子一定是当前格子的某个相邻格子，有计算方法）[光栅化直线]</li>
+</ul>
+</li>
+<li>格子分辨率：
+<ul>
+<li>太小，遍历物体太多</li>
+<li>太大，遍历格子太多</li>
+<li>启发式的算法总结：#cells = C * #objs，C 大致在 27（3D情况下）</li>
+</ul>
+</li>
+<li>物体在场景中分布均匀的时候效果好</li>
+<li>&ldquo;Teapot in the stadium&rdquo; 效果差</li>
+</ul>
+<h4 id="spatial-partition">Spatial Partition</h4>
+<ul>
+<li>
+<p>（物体约等于三角形）</p>
+</li>
+<li>
+<p>常见</p>
+<ul>
+<li>
+<p>Oct-Tree：空间划分为八块（高维度表现差）</p>
+</li>
+<li>
+<p>KD-Tree：空间沿着某个轴砍成两块（与维度无关），每次的划分轴按 xyz 顺序排队</p>
+</li>
+<li>
+<p>BSP-Tree：也砍成两块，但非轴向（且高维度时划分复杂）</p>
+</li>
+</ul>
+</li>
+<li>
+<p>KD-Tree 预处理：形成一颗二叉树</p>
+</li>
+<li>
+<p>KD-Tree 数据结构</p>
+<ul>
+<li>非叶子节点记录
+<ul>
+<li>划分轴</li>
+<li>划分位置：划分平面的坐标</li>
+<li>儿子指针</li>
+<li>（不记录物体）</li>
+</ul>
+</li>
+<li>叶子节点记录
+<ul>
+<li>包含的物体</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>查找相交：遍历 KD-Tree</p>
+</li>
+<li>
+<p>问题：很难判定一个三角形是否和划分的 AABB 有交集</p>
+</li>
+<li>
+<p>问题：一个物体可能存在多个不同的叶子节点里</p>
+</li>
+</ul>
+<h4 id="object-partition--bounding-volume-hierarchybvh">Object Partition &amp; Bounding Volume Hierarchy（BVH）</h4>
+<ul>
+<li>划分物体为两部分后重新计算子的 AABB</li>
+<li>性质：一个物体只在一个盒子里 且 AABB 很好求</li>
+<li>问题：不同的 AABB 会相交 &mdash; 怎么划分很重要</li>
+<li>Building BVH
+<ul>
+<li>
+<p>划分：</p>
+<ul>
+<li>总选最长轴切开</li>
+<li>从中间的物体分开</li>
+</ul>
+</li>
+<li>
+<p>终止</p>
+<ul>
+<li>节点只包含少量物体</li>
+</ul>
+</li>
+<li>
+<p>数据结构</p>
+<ul>
+<li>非叶子节点：Bounding Box 和 指针</li>
+<li>叶子节点：Bounding Box 和 物体</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="basic-radiography">Basic Radiography</h2>
+<ul>
+<li>
+<p>定义光</p>
+</li>
+<li>
+<p>精确描述光的空间特性：Radiant flux（power），Intensity，Irradiance，Radiance</p>
+</li>
+<li>
+<p>物理层面表示光照的计算</p>
+</li>
+<li>
+<p>解释</p>
+<ul>
+<li>
+<p>Radiant Energy：能量</p>
+</li>
+<li>
+<p>Radiant Flux：单位时间的能量</p>
+</li>
+<li>
+<p>Intensity：从源发出的光</p>
+</li>
+<li>
+<p>Irradiance：被表面接收的光</p>
+</li>
+<li>
+<p>Radiance：射线传播的光</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Radiant Intensity</p>
+<ul>
+<li>
+<p>每 Solid Angle 的 Power</p>
+</li>
+<li>
+<p>Solid Angle</p>
+<ul>
+<li>
+<p>三维中，球面上的面积 A 除以球半径平方 r^2</p>
+</li>
+<li>
+<p>球有 $ 4\pi $ 立体角</p>
+</li>
+<li>
+<p>Differential Solid Angle</p>
+<ul>
+<li>
+<p>两个小角度产生的小面积的立体角</p>
+</li>
+<li>
+<p>$$ d\omega = {dA\over r^2} = \sin\theta d \theta d\phi$$</p>
+</li>
+<li>
+<p>$ \omega $ 看成从原点出发的单位向量（光照）</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Isotropic Point Light 的能量在球面上</p>
+<ul>
+<li>每个方向（单位立体角）上对应的强度为光的总能量除以 $4\pi$</li>
+<li>$$ I = {\Phi\over4\pi} $$</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6/">计算机图形学</a>
+        
+            <a href="/tags/games101/">GAMES101</a>
+        
+            <a href="/tags/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">课程笔记</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/article/games101_lecture22/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GAMES101_Lecture22</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/article/games101_lecture21/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GAMES101_Lecture21</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/article/games101_lecture20/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GAMES101_Lecture20</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/article/games101_lecture19/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GAMES101_Lecture19</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/article/games101_lecture18/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GAMES101_Lecture18</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 5rLku
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

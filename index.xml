@@ -6,13 +6,2779 @@
         <description>Recent content on 5rLku</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Wed, 15 Feb 2023 11:24:41 +0800</lastBuildDate><atom:link href="https://5rLku.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 10 Mar 2023 13:21:23 +0800</lastBuildDate><atom:link href="https://5rLku.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Portfolio</title>
+        <link>https://5rLku.github.io/article/portfolio/</link>
+        <pubDate>Fri, 10 Mar 2023 13:21:23 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/portfolio/</guid>
+        <description>&lt;h1 id=&#34;技术美术作品集&#34;&gt;技术美术作品集&lt;/h1&gt;
+&lt;h2 id=&#34;curl-noise-速度场流体&#34;&gt;Curl-noise 速度场流体&lt;/h2&gt;
+&lt;h3 id=&#34;opengl&#34;&gt;OpenGL&lt;/h3&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+    .video-shortcode {
+        position: relative;	
+        max-width: 90%;
+        height: auto;
+    }
+&lt;/style&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+&lt;video class=&#34;video-shortcode&#34; preload=&#34;auto&#34; controls&gt;
+    &lt;source src=&#34;curl-noise_noise.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    There should have been a video here but your browser does not seem
+    to support it.
+&lt;/video&gt;
+
+&lt;figcaption&gt;
+  &lt;h4&gt;curl-noise 噪声速度场&lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+    .video-shortcode {
+        position: relative;	
+        max-width: 90%;
+        height: auto;
+    }
+&lt;/style&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+&lt;video class=&#34;video-shortcode&#34; preload=&#34;auto&#34; controls&gt;
+    &lt;source src=&#34;curl-noise_obstacle.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    There should have been a video here but your browser does not seem
+    to support it.
+&lt;/video&gt;
+
+&lt;figcaption&gt;
+  &lt;h4&gt;curl-noise 障碍球速度场&lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;Perlin Noise 生成&lt;/li&gt;
+&lt;li&gt;curl-noise
+&lt;ul&gt;
+&lt;li&gt;复现论文《Curl-Noise for Procedural Fluid Flow》&lt;/li&gt;
+&lt;li&gt;对噪声场求其旋度场，该旋度场的散度处处为 0 ，可以模拟流体粒子的流动&lt;/li&gt;
+&lt;li&gt;对旋度场调制，生成含障碍物的速度场&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;houdini&#34;&gt;Houdini&lt;/h3&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+    .video-shortcode {
+        position: relative;	
+        max-width: 90%;
+        height: auto;
+    }
+&lt;/style&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+&lt;video class=&#34;video-shortcode&#34; preload=&#34;auto&#34; controls&gt;
+    &lt;source src=&#34;Houdini_1.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    There should have been a video here but your browser does not seem
+    to support it.
+&lt;/video&gt;
+
+&lt;figcaption&gt;
+  &lt;h4&gt;curl-noise 模拟随风飘散&lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div&gt;
+&lt;figure&gt;&lt;img src=&#34;Houdini_2.jpg&#34; width=&#34;90%&#34;/&gt;&lt;figcaption&gt;
+            &lt;h4&gt;curl-noise 轨迹绘制&lt;/h4&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Houdini 的简单使用&lt;/li&gt;
+&lt;li&gt;使用 Houdini 的 curl-noise 搭建了两个场景&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;emdb-三维可视化&#34;&gt;EMDB 三维可视化&lt;/h2&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+    .video-shortcode {
+        position: relative;	
+        max-width: 90%;
+        height: auto;
+    }
+&lt;/style&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+&lt;video class=&#34;video-shortcode&#34; preload=&#34;auto&#34; controls&gt;
+    &lt;source src=&#34;EMDB_visualization.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    There should have been a video here but your browser does not seem
+    to support it.
+&lt;/video&gt;
+
+&lt;figcaption&gt;
+  &lt;h4&gt;OpenGL 下可视化生物大分子&lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenGL 下实现 Marching Tetrahedron 算法&lt;/li&gt;
+&lt;li&gt;可视化 EMDB 数据库中的生物大分子&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ar-室内导航&#34;&gt;AR 室内导航&lt;/h2&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+    .video-shortcode {
+        position: relative;	
+        max-width: 90%;
+        height: auto;
+    }
+&lt;/style&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+&lt;video class=&#34;video-shortcode&#34; preload=&#34;auto&#34; controls&gt;
+    &lt;source src=&#34;AR_navi.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    There should have been a video here but your browser does not seem
+    to support it.
+&lt;/video&gt;
+
+&lt;figcaption&gt;
+  &lt;h4&gt;AR 室内导航&lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;OpenGL + OpenCV&lt;/li&gt;
+&lt;li&gt;负责将 AR 的箭头绘制到视频流中&lt;/li&gt;
+&lt;li&gt;变换相机的内参矩阵为 OpenGL 的投影矩阵，外参矩阵为模型视图矩阵&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ue4-tps-demo&#34;&gt;UE4 TPS Demo&lt;/h2&gt;
+&lt;style type=&#34;text/css&#34;&gt;
+    .video-shortcode {
+        position: relative;	
+        max-width: 90%;
+        height: auto;
+    }
+&lt;/style&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+&lt;video class=&#34;video-shortcode&#34; preload=&#34;auto&#34; controls&gt;
+    &lt;source src=&#34;UE4.mp4&#34; type=&#34;video/mp4&#34;&gt;
+    There should have been a video here but your browser does not seem
+    to support it.
+&lt;/video&gt;
+
+&lt;figcaption&gt;
+  &lt;h4&gt;UE4 TPS Demo&lt;/h4&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;div&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/5rLku/Unreal&#34;&gt;https://github.com/5rLku/Unreal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;使用 UE4 进行 TPS demo 开发&lt;/li&gt;
+&lt;li&gt;涉及网络、动画、寻路、纹理动画等多个部分&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>TA_100_Arts</title>
+        <link>https://5rLku.github.io/article/ta_100_arts/</link>
+        <pubDate>Wed, 08 Mar 2023 21:32:45 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/ta_100_arts/</guid>
+        <description>&lt;h1 id=&#34;百人计划_美术笔记&#34;&gt;百人计划_美术笔记&lt;/h1&gt;
+&lt;h2 id=&#34;11-美术理论基础&#34;&gt;1.1 美术理论基础&lt;/h2&gt;
+&lt;h3 id=&#34;光影&#34;&gt;光影&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;黑白灰&lt;/li&gt;
+&lt;li&gt;明暗五调子：高光、亮面、灰面、明暗交界线、暗面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;透视&#34;&gt;透视&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;平行透视：一点透视，物体在远处消失于一个点&lt;/li&gt;
+&lt;li&gt;成角透视：两点透视，物体在远处向两个点消失（左右）&lt;/li&gt;
+&lt;li&gt;三点透视：在竖直方向上再多一消失点&lt;/li&gt;
+&lt;li&gt;散点透视：不同物体不同透视，国画常见&lt;/li&gt;
+&lt;li&gt;空气透视：色彩透视，烟雾等&lt;/li&gt;
+&lt;li&gt;达芬奇：色彩、消逝（清晰度）、线（大小）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;色彩&#34;&gt;色彩&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;色相、饱和度、明度&lt;/li&gt;
+&lt;li&gt;三原色：光学三原色RGB（叠加白）、颜料三原色CMY（叠加黑）&lt;/li&gt;
+&lt;li&gt;间色：两种原色叠加&lt;/li&gt;
+&lt;li&gt;复色：原+间 / 间 + 间&lt;/li&gt;
+&lt;li&gt;同类色：同色相不同倾向（60 度）&lt;/li&gt;
+&lt;li&gt;互补色：色相环距离 180 度，对比强烈&lt;/li&gt;
+&lt;li&gt;对比色：120 - 180 度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;构图&#34;&gt;构图&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;zelda：三角设计原则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;镜头语言&#34;&gt;镜头语言&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;广角、长焦&lt;/li&gt;
+&lt;li&gt;拉（远离）、移（移动）、跟拍（跟随）、摇（选装）、升降（Y轴）、推（接近）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;游戏美术概念设计&#34;&gt;游戏美术概念设计&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;确定风格：用户群、游戏理念、平台性能&lt;/li&gt;
+&lt;li&gt;分类：东、西、卡通、写实&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;补充&#34;&gt;补充&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;脏、乱、散&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;12-角色设计精要&#34;&gt;1.2 角色设计精要&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;角色关键词（独一无二）&lt;/li&gt;
+&lt;li&gt;素材和灵感（基于已有）&lt;/li&gt;
+&lt;li&gt;构图设计（轮廓剪影、内在构成）
+&lt;ul&gt;
+&lt;li&gt;轮廓：基础形状&lt;/li&gt;
+&lt;li&gt;构成：点、线、面、简繁比重、疏密&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;配色（传达感受）&lt;/li&gt;
+&lt;li&gt;服装设计（角色性格、细节信息）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;13-场景设计精要&#34;&gt;1.3 场景设计精要&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;主题&lt;/li&gt;
+&lt;li&gt;风格&lt;/li&gt;
+&lt;li&gt;设计构图：
+&lt;ul&gt;
+&lt;li&gt;三分法：重点放在 1/3 处&lt;/li&gt;
+&lt;li&gt;环形法：道路感、距离感、聚焦中心、封闭感&lt;/li&gt;
+&lt;li&gt;对称：平静稳定、但单一不生动&lt;/li&gt;
+&lt;li&gt;垂直线：节奏感（长短粗细）&lt;/li&gt;
+&lt;li&gt;水平线：平稳舒展（不宜过多过密）&lt;/li&gt;
+&lt;li&gt;十字分割：集中于一点&lt;/li&gt;
+&lt;li&gt;视觉引导线：引导到重点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;速涂场景剪影
+&lt;ul&gt;
+&lt;li&gt;统一中求变&lt;/li&gt;
+&lt;li&gt;辨识度&lt;/li&gt;
+&lt;li&gt;问题
+&lt;ul&gt;
+&lt;li&gt;杂乱无章（要凸出核心）&lt;/li&gt;
+&lt;li&gt;变化单一（角度、间隔）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;迭代
+&lt;ul&gt;
+&lt;li&gt;添加元素&lt;/li&gt;
+&lt;li&gt;局部变形、替换&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;剪影内切
+&lt;ul&gt;
+&lt;li&gt;分主次结构 - 定明暗 - 优化调子疏密等&lt;/li&gt;
+&lt;li&gt;三分法重心部位要突起&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;前景场景和纵深
+&lt;ul&gt;
+&lt;li&gt;前景
+&lt;ul&gt;
+&lt;li&gt;主体前面&lt;/li&gt;
+&lt;li&gt;衬托&lt;/li&gt;
+&lt;li&gt;符合主题&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;后景产生纵深&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;场景色彩分类
+&lt;ul&gt;
+&lt;li&gt;比例：70：25：5 - 主色：辅助色：点缀色&lt;/li&gt;
+&lt;li&gt;搭配：相邻色、间隔色、互补色&lt;/li&gt;
+&lt;li&gt;冷、暖、中性（黑白灰）&lt;/li&gt;
+&lt;li&gt;叠色：黑白灰 + 叠色&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;光影氛围
+&lt;ul&gt;
+&lt;li&gt;打光（正光、逆光）&lt;/li&gt;
+&lt;li&gt;光影分割&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;21-dcc-工具链和引擎工具链&#34;&gt;2.1 DCC 工具链和引擎工具链&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Digital Content Creation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;建模软件&#34;&gt;建模软件&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;3DS MAX
+&lt;ul&gt;
+&lt;li&gt;硬表面建模&lt;/li&gt;
+&lt;li&gt;静态物体建模&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;MAYA
+&lt;ul&gt;
+&lt;li&gt;动作、特效&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Houdini
+&lt;ul&gt;
+&lt;li&gt;程序化生成&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Blender
+&lt;ul&gt;
+&lt;li&gt;开源、功能全&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;贴图软件&#34;&gt;贴图软件&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Substance
+&lt;ul&gt;
+&lt;li&gt;Painter
+&lt;ul&gt;
+&lt;li&gt;类似 PS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Designer
+&lt;ul&gt;
+&lt;li&gt;程序化贴图&lt;/li&gt;
+&lt;li&gt;artstation 的 Daniel Thiger&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Alchemist&lt;/li&gt;
+&lt;li&gt;Quixel Mixer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;美术常用工具&#34;&gt;美术常用工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;RizomUV
+&lt;ul&gt;
+&lt;li&gt;拆分 UV&lt;/li&gt;
+&lt;li&gt;有 Max 的插件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;渲梦工厂&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;总结&#34;&gt;总结&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;美术功底&lt;/li&gt;
+&lt;li&gt;审美&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>TA_100_Graphics</title>
+        <link>https://5rLku.github.io/article/ta_100_graphics/</link>
+        <pubDate>Thu, 02 Mar 2023 22:08:44 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/ta_100_graphics/</guid>
+        <description>&lt;h1 id=&#34;百人计划_图形查漏笔记&#34;&gt;百人计划_图形查漏笔记&lt;/h1&gt;
+&lt;h2 id=&#34;11-渲染流水线&#34;&gt;1.1 渲染流水线&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;应用阶段
+&lt;ul&gt;
+&lt;li&gt;粗粒度剔除：直接剔除视锥体外的物体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;几何阶段
+&lt;ul&gt;
+&lt;li&gt;顶点 shader &amp;mdash; 几何 shader &amp;mdash; 曲面细分 shader &amp;mdash; 投影 &amp;mdash; 裁剪 &amp;mdash; 屏幕映射&lt;/li&gt;
+&lt;li&gt;几何 shader：图元着色 或者 基于图元产生新图元&lt;/li&gt;
+&lt;li&gt;裁剪：
+&lt;ul&gt;
+&lt;li&gt;视锥体裁剪：剔除视锥体外的顶点，在边界上产生新顶点&lt;/li&gt;
+&lt;li&gt;正面背面的 culling：根据三角形顶点的顺逆时针决定正背面，选择是否渲染正背面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;光栅化
+&lt;ul&gt;
+&lt;li&gt;三角形设置 &amp;mdash; 三角形遍历 &amp;mdash; 片元shader &amp;mdash; 逐片元操作&lt;/li&gt;
+&lt;li&gt;抗锯齿：
+&lt;ul&gt;
+&lt;li&gt;SSAA 在光栅化前扩大 buffer，光栅化后下采样&lt;/li&gt;
+&lt;li&gt;MSAA 在光栅化时建立子像素，根据覆盖率决定像素颜色&lt;/li&gt;
+&lt;li&gt;FXAA/TXAA 属于图像操作，后处理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;逐片元操作
+&lt;ul&gt;
+&lt;li&gt;决定最终像素&lt;/li&gt;
+&lt;li&gt;OpenGL 顺序：
+&lt;ul&gt;
+&lt;li&gt;scissor test：自定义的不绘制区域&lt;/li&gt;
+&lt;li&gt;alpha test&lt;/li&gt;
+&lt;li&gt;stencil test&lt;/li&gt;
+&lt;li&gt;depth test&lt;/li&gt;
+&lt;li&gt;blend&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;13-纹理的秘密&#34;&gt;1.3 纹理的秘密&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;GPU 中像素 2x2 一组处理，算 ddx，ddy 和 法线&lt;/li&gt;
+&lt;li&gt;Summed - Area Table：最右下角的值是到从自己到左上角的大矩形的值的和，可以通过加减算出任意矩形区域均值&lt;/li&gt;
+&lt;li&gt;Unity/UE4 各向异性过滤
+&lt;ul&gt;
+&lt;li&gt;不用 Ripmap&lt;/li&gt;
+&lt;li&gt;重用 Mipmap&lt;/li&gt;
+&lt;li&gt;像素对应纹理空间中区域的最小边算 level，最大边方向沿中心点采样&lt;/li&gt;
+&lt;li&gt;2X，4X，8X，16X 决定采样次数（16X &amp;mdash; 采128次？）&lt;/li&gt;
+&lt;li&gt;不一定按照最大次数来采，会根据区域情况决定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;优化：
+&lt;ul&gt;
+&lt;li&gt;Draw Call，CPU
+&lt;ul&gt;
+&lt;li&gt;纹理图集，纹理数组&lt;/li&gt;
+&lt;li&gt;避免每次 draw call 都提交数据，集成起来一次性提交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;GPU
+&lt;ul&gt;
+&lt;li&gt;纹理压缩&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;cube map：
+&lt;ul&gt;
+&lt;li&gt;(u, v) 计算：用向量绝对值最大的分量代表的面，其他分量除以该绝对值，再映射到 [0, 1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;14-pc手机图形-api&#34;&gt;1.4 PC手机图形 API&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;支持 OpenGL ES 3.2 的 骁龙型号
+&lt;ul&gt;
+&lt;li&gt;420+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;怎么看待 Vulkan
+&lt;ul&gt;
+&lt;li&gt;新一代图形 API，类似 DX12，提供更底层的修改和定制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;顶点缓冲区：显存中存储顶点&lt;/li&gt;
+&lt;li&gt;OpenGL ES 3.0 移除 alpha 测试（？）[片段着色器可以抛弃片段，因此放到片段着色器中]&lt;/li&gt;
+&lt;li&gt;内容太多（www.bilibili.com/video/BV1q5411w7E8）&lt;/li&gt;
+&lt;li&gt;Ardeno 是 GPU&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;21-色彩空间介绍&#34;&gt;2.1 色彩空间介绍&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;光经过反射后，物体会吸收一定波长的光&lt;/li&gt;
+&lt;li&gt;反射什么光，物体就呈现什么颜色&lt;/li&gt;
+&lt;li&gt;人眼在高亮度和低亮度时都能看清微小颜色差别（类似相机调整光圈大小），但无法两者同时满足&lt;/li&gt;
+&lt;li&gt;S for 蓝色，M for 绿色，L for 红色（小中大波长）&lt;/li&gt;
+&lt;li&gt;Munsell 色彩系统：HSL / HSV&lt;/li&gt;
+&lt;li&gt;CIE XYZ 由 CIE RGB Color Matching 的 RGB 线性转换得到，最后做归一化&lt;/li&gt;
+&lt;li&gt;CIE XYZ 色彩分布不均匀&lt;/li&gt;
+&lt;li&gt;色彩空间指标：
+&lt;ul&gt;
+&lt;li&gt;色域（基色坐标，整个色彩空间是三角形）&lt;/li&gt;
+&lt;li&gt;Gamma（如何对三角形内进行切分/采样）
+&lt;ul&gt;
+&lt;li&gt;gamma = 1 是均匀采样&lt;/li&gt;
+&lt;li&gt;sRGB 的 gamma 约等于 2.2，外面采样间隔细，中间采样间隔粗&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;白点（三角形中心）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;22-模型与材质&#34;&gt;2.2 模型与材质&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;OBJ 不包含 顶点色（单个顶点的 RGBA）&lt;/li&gt;
+&lt;li&gt;fbx 支持 顶点色，多象限（套） uv，UE4 LOD（细节层次模型【自动根据占屏幕的大小使用面数较少的模型】）&lt;/li&gt;
+&lt;li&gt;Glossy 镜面折射（类似 glossy 反射，在镜面方向的一个小范围内折射）：可以先渲染后面物体，将渲染结果交给该 glossy 的 shader 进行采样，然后设置 glossy 的透明度为半透明，即可做到毛玻璃效果&lt;/li&gt;
+&lt;li&gt;多层材质：木地板上面涂了一层油漆&lt;/li&gt;
+&lt;li&gt;次表面散射：一般半透明，玉石、蜡烛、牛奶等（光线可进入物体内部，在内部多次折射后再出去）&lt;/li&gt;
+&lt;li&gt;多层皮肤模型：油脂层，表皮层，真皮层&lt;/li&gt;
+&lt;li&gt;模型数据在渲染中的作用
+&lt;ul&gt;
+&lt;li&gt;顶点动画：Vshader 中修改顶点数据，使模型移动&lt;/li&gt;
+&lt;li&gt;纹理动画：Fshader 中修改 uv，使纹理移动&lt;/li&gt;
+&lt;li&gt;顶点色：渲染时影响输出结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;非真实感渲染时，使顶点朝法线偏移一段距离，然后渲染一个颜色形成描边（如果产生描边断裂是因为法线不连续）&lt;/li&gt;
+&lt;li&gt;光滑组在光照时会把顶点法线重新计算，使其光滑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;23-常用函数介绍&#34;&gt;2.3 常用函数介绍&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;HLSL&lt;/li&gt;
+&lt;li&gt;ret = frexp(x, out exp) 分解浮点数为尾数和指数，x = ret*2^exp (x=0,ret = exp = 0)&lt;/li&gt;
+&lt;li&gt;lerp(x, y, s) 线性插值&lt;/li&gt;
+&lt;li&gt;smoothstep(min, max, x) 根据 x 在 min，max 中的位置进行 Hermite 插值&lt;/li&gt;
+&lt;li&gt;all 判断全零（bool），clip 小于某值丢弃（返回值 void）&lt;/li&gt;
+&lt;li&gt;sign 判断正负&lt;/li&gt;
+&lt;li&gt;isinf（inf，0x3f3f3f3f，能满足 inf + inf = inf）&lt;/li&gt;
+&lt;li&gt;reflect 反射方向，refract 折射方向，lit 返回光照（ambient，diffuse，specular，1）&lt;/li&gt;
+&lt;li&gt;faceforward 返回面向屏幕的面法线&lt;/li&gt;
+&lt;li&gt;采样：（2D）、lod、bias、grad、proj&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;24-传统经验光照模型详解&#34;&gt;2.4 传统经验光照模型详解&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Phong 会在视线和光照在同侧时产生高光缺失（反射光与视线间角度大于 90 度，负的余弦会被变为 0）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;25-gamma-矫正&#34;&gt;2.5 gamma 矫正&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;传递函数：光转电 - 电转光&lt;/li&gt;
+&lt;li&gt;$$ V_{out} = {v_{in}}^{gamma} $$&lt;/li&gt;
+&lt;li&gt;gamma 对线性三色值和非线性视频信号之间进行编解码&lt;/li&gt;
+&lt;li&gt;非线性存储为了优化空间和带宽（人眼对暗部更敏感，暗部用高精度，亮部用低精度）&lt;/li&gt;
+&lt;li&gt;渲染前要转换为线性颜色空间&lt;/li&gt;
+&lt;li&gt;Unity 硬件特性支持：
+&lt;ul&gt;
+&lt;li&gt;sRGB Frame Buffer 和 sRGB Sampler&lt;/li&gt;
+&lt;li&gt;一些平台不支持&lt;/li&gt;
+&lt;li&gt;比在 shader 中进行矫正要快&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;工作流：
+&lt;ul&gt;
+&lt;li&gt;Substance Painter 贴图为 sRGB&lt;/li&gt;
+&lt;li&gt;Photoshop 导出时可设置 gamma 值（不设置默认为 sRGB）&lt;/li&gt;
+&lt;li&gt;Photoshop 图层间混合前上层图层会进行 gamma（可设置 “用灰度系数混合 RGB 颜色” 参数为 1）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;pow 进行 gamma 效率低（Unity 中 gamma 函数的 Exact 和 不带 Exact）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;26-ldr-和-hdr&#34;&gt;2.6 LDR 和 HDR&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;动态范围 = 最高亮度 / 最低亮度&lt;/li&gt;
+&lt;li&gt;LDR：
+&lt;ul&gt;
+&lt;li&gt;8位（256）&lt;/li&gt;
+&lt;li&gt;单通道 0-1&lt;/li&gt;
+&lt;li&gt;jpg、png&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HDR：
+&lt;ul&gt;
+&lt;li&gt;大于 8 位&lt;/li&gt;
+&lt;li&gt;单通道超过 1&lt;/li&gt;
+&lt;li&gt;hdr、tif、exr、raw&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;相机：LUT&lt;/li&gt;
+&lt;li&gt;HDR &amp;gt; 1 才有 Bloom&lt;/li&gt;
+&lt;li&gt;Unity
+&lt;ul&gt;
+&lt;li&gt;Camera
+&lt;ul&gt;
+&lt;li&gt;渲染为 HDR buffer&lt;/li&gt;
+&lt;li&gt;做后处理：Bloom &amp;amp; Tone mapping，得到 LDR&lt;/li&gt;
+&lt;li&gt;LDR 发送给屏幕&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Lightmap
+&lt;ul&gt;
+&lt;li&gt;Project Setting - Player - Lightmap Encoding： High Quality（HDR 光照贴图支持）&lt;/li&gt;
+&lt;li&gt;（Normal Quality： RGBM 编码）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;拾色器
+&lt;ul&gt;
+&lt;li&gt;Intensity 滑动条&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HDR 优点
+&lt;ul&gt;
+&lt;li&gt;超过 1 的部分不会被截掉，增加亮部细节，减少曝光&lt;/li&gt;
+&lt;li&gt;减少画面暗部色阶感&lt;/li&gt;
+&lt;li&gt;支持 Bloom&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;HDR 缺点
+&lt;ul&gt;
+&lt;li&gt;慢，显存占用大&lt;/li&gt;
+&lt;li&gt;不支持硬件抗锯齿&lt;/li&gt;
+&lt;li&gt;部分手机不支持&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bloom
+&lt;ul&gt;
+&lt;li&gt;渲染 scene color&lt;/li&gt;
+&lt;li&gt;计算超出阈值的高光像素&lt;/li&gt;
+&lt;li&gt;对像素做高斯模糊&lt;/li&gt;
+&lt;li&gt;叠加&lt;/li&gt;
+&lt;li&gt;Unity
+&lt;ul&gt;
+&lt;li&gt;提高光像素，存入 Render texture&lt;/li&gt;
+&lt;li&gt;下采样 1/2&lt;/li&gt;
+&lt;li&gt;重复，直到 1/8，然后停止（不提）&lt;/li&gt;
+&lt;li&gt;上采样复原，并叠加之前存的高光&lt;/li&gt;
+&lt;li&gt;重复，直到原大小（并叠加）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Tone mapping
+&lt;ul&gt;
+&lt;li&gt;色调映射&lt;/li&gt;
+&lt;li&gt;HDR -&amp;gt; LDR&lt;/li&gt;
+&lt;li&gt;S 曲线映射（线性效果差）
+&lt;ul&gt;
+&lt;li&gt;ACES（广泛）&lt;/li&gt;
+&lt;li&gt;其他&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LUT（Look-Up-Table）
+&lt;ul&gt;
+&lt;li&gt;Unity 中 color grading&lt;/li&gt;
+&lt;li&gt;对 LDR 做变化&lt;/li&gt;
+&lt;li&gt;3D LUT&lt;/li&gt;
+&lt;li&gt;PS 中 LUT 相当于画面滤镜&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;27-bump-mapping-改进&#34;&gt;2.7 Bump Mapping 改进&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;法线、视差、浮雕映射&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;法线贴图-normal-mapping&#34;&gt;法线贴图 Normal Mapping&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;法线贴图由高模映射到低模生成，或者使用 PS、SD&lt;/li&gt;
+&lt;li&gt;切线空间
+&lt;ul&gt;
+&lt;li&gt;存储法线&lt;/li&gt;
+&lt;li&gt;顶点法线为 Z 轴，切线和 uv 一致为 X 轴，叉乘得到副切线 Y 轴&lt;/li&gt;
+&lt;li&gt;需要空间转换，在同一空间计算光照&lt;/li&gt;
+&lt;li&gt;切线空间到世界空间的转换
+&lt;ul&gt;
+&lt;li&gt;TBN 矩阵
+&lt;ul&gt;
+&lt;li&gt;正交矩阵，逆就是转置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;方便进行纹理应用在不同的模型上&lt;/li&gt;
+&lt;li&gt;方便进行 uv 动画&lt;/li&gt;
+&lt;li&gt;方便压缩（法线在 0-1，可以存两个然后推导第三个值）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Unity 压缩
+&lt;ul&gt;
+&lt;li&gt;非移动平台，DXRT5nm，两个通道
+&lt;ul&gt;
+&lt;li&gt;需要从存储时的 0-1 映射回 -1 - 1 来计算法线&lt;/li&gt;
+&lt;li&gt;添加系数去调整扰动效果大小&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;移动平台，RGB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;视差贴图-parallax-mapping&#34;&gt;视差贴图 Parallax Mapping&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;高度图，基于顶点位移，纹理偏移&lt;/li&gt;
+&lt;li&gt;根据存储的高度（深度），近似地去获得偏移量（相似三角形）&lt;/li&gt;
+&lt;li&gt;采样偏移的点&lt;/li&gt;
+&lt;li&gt;更精确：Steep Parallax Mapping
+&lt;ul&gt;
+&lt;li&gt;根据深度分层&lt;/li&gt;
+&lt;li&gt;每次尝试一个深度并计算偏移&lt;/li&gt;
+&lt;li&gt;看该深度是否比目前偏移的贴图坐标对应的深度大&lt;/li&gt;
+&lt;li&gt;如果大，则返回偏移&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;浮雕贴图-relief-mapping&#34;&gt;浮雕贴图 Relief Mapping&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;射线步进 + 二分查找
+&lt;ul&gt;
+&lt;li&gt;先类似 Steep Parallax Mapping 的方法找到大于小于的两个深度&lt;/li&gt;
+&lt;li&gt;在该深度间进行二分查找最合理的值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;直接使用二分查找可能跳过前面的遮挡点（很高 + 很深的组合）&lt;/li&gt;
+&lt;li&gt;视差 闭射/遮挡 贴图 Parallax Occlusion Mapping
+&lt;ul&gt;
+&lt;li&gt;不做二分查找&lt;/li&gt;
+&lt;li&gt;在两个点采样，用插值作为结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture22</title>
+        <link>https://5rLku.github.io/article/games101_lecture22/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:38 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture22/</guid>
+        <description>&lt;h1 id=&#34;animation-cont&#34;&gt;Animation Cont.&lt;/h1&gt;
+&lt;h2 id=&#34;single-particle-simulation&#34;&gt;Single Particle Simulation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;速度场 $$ {dx\over dt} = \dot{x} = v(x，t)$$&lt;/li&gt;
+&lt;li&gt;单变量，常微分方程（Ordinary Differential Equation，ODE）&lt;/li&gt;
+&lt;li&gt;Euler&amp;rsquo;s Method
+&lt;ul&gt;
+&lt;li&gt;离散化时间&lt;/li&gt;
+&lt;li&gt;全部用上一帧的量去估计下一帧的量（粒子的位置，速度，加速度）&lt;/li&gt;
+&lt;li&gt;问题：非常不准确（步长太大时有很大的误差，Errors）&lt;/li&gt;
+&lt;li&gt;问题：不稳定（绕圆时不管步长取多小都会逐渐偏离圆心，Instability）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Combating Instability
+&lt;ul&gt;
+&lt;li&gt;Midpoint Method
+&lt;ul&gt;
+&lt;li&gt;用欧拉法计算得到的位置和初始位置的中点&lt;/li&gt;
+&lt;li&gt;用中点处的速度使用欧拉法计算得到最终的位置&lt;/li&gt;
+&lt;li&gt;Modified Euler：等效于比欧拉方法多了个二次项&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Adaptive Step Size
+&lt;ul&gt;
+&lt;li&gt;先从起点做一次欧拉&lt;/li&gt;
+&lt;li&gt;再从起点做两次欧拉，每次欧拉使用一半的时间&lt;/li&gt;
+&lt;li&gt;如果两者相差大于阈值，则步长减半，重复上述操作&lt;/li&gt;
+&lt;li&gt;直到两者相差小于阈值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Implicit Euler Method
+&lt;ul&gt;
+&lt;li&gt;使用下一个时刻的加速度计算速度&lt;/li&gt;
+&lt;li&gt;然后使用计算的速度计算下一个时刻的位置&lt;/li&gt;
+&lt;li&gt;解非线性问题&lt;/li&gt;
+&lt;li&gt;求根算法：牛顿法等&lt;/li&gt;
+&lt;li&gt;稳定性好&lt;/li&gt;
+&lt;li&gt;定义 stability
+&lt;ul&gt;
+&lt;li&gt;local truncation error（every step）和 total accumulated error（overall）&lt;/li&gt;
+&lt;li&gt;值没有意义，应该研究阶（order）&lt;/li&gt;
+&lt;li&gt;Implicit Euler Method 是 order 1 (h for step)
+&lt;ul&gt;
+&lt;li&gt;local truncation error：O(h^2)&lt;/li&gt;
+&lt;li&gt;total accumulated error：O(h)&lt;/li&gt;
+&lt;li&gt;阶越大越好（当 h 减小时，error 减小得越多）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Runge-Kutta Families
+&lt;ul&gt;
+&lt;li&gt;一类擅长解 ODE 的方法&lt;/li&gt;
+&lt;li&gt;order 4 用得最多，a.k.a. RK4
+&lt;ul&gt;
+&lt;li&gt;类似于中点法，但是是四阶&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Position-Based / Verlet Integration
+&lt;ul&gt;
+&lt;li&gt;不基于物理，快速简单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;rigid-body-simulation&#34;&gt;Rigid Body Simulation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;内部所有点都同时移动，没有形变&lt;/li&gt;
+&lt;li&gt;对于粒子模拟添加了角度，角速度和角加速度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;fluids-simulation&#34;&gt;Fluids Simulation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Position Based Fluids
+&lt;ul&gt;
+&lt;li&gt;假设水体是刚体小球组成&lt;/li&gt;
+&lt;li&gt;假设水在任何位置不可压缩（密度不变）&lt;/li&gt;
+&lt;li&gt;如果发生密度变化，就改变小球位置，使得密度不变&lt;/li&gt;
+&lt;li&gt;需要知道每个位置的密度对于每个小球位置的导数&lt;/li&gt;
+&lt;li&gt;使用梯度下降来调整/更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Eulerian VS Lagrangian
+&lt;ul&gt;
+&lt;li&gt;Lagrangian：质点法，考虑为粒子&lt;/li&gt;
+&lt;li&gt;Eulerian：网格法，考虑格子&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Material Point Method（MPM）
+&lt;ul&gt;
+&lt;li&gt;同时考虑 Eulerian 和 Lagrangian&lt;/li&gt;
+&lt;li&gt;粒子考虑材质，网格做数值积分&lt;/li&gt;
+&lt;li&gt;性质从粒子传给网格，网格做完计算后重新传回性质给粒子&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;后续学习&#34;&gt;后续学习&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;实时渲染：可以拿着 RTR 用 OpenGL 或者 DirectX 写代码了&lt;/li&gt;
+&lt;li&gt;几何：数学基础要求高&lt;/li&gt;
+&lt;li&gt;光线传播：后续有课&lt;/li&gt;
+&lt;li&gt;模拟与仿真：Games201&lt;/li&gt;
+&lt;li&gt;其他：实时高质量渲染、高级图像合成&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture21</title>
+        <link>https://5rLku.github.io/article/games101_lecture21/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:35 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture21/</guid>
+        <description>&lt;h1 id=&#34;animation&#34;&gt;Animation&lt;/h1&gt;
+&lt;h2 id=&#34;history&#34;&gt;History&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;fps
+&lt;ul&gt;
+&lt;li&gt;电影：24&lt;/li&gt;
+&lt;li&gt;视频：30&lt;/li&gt;
+&lt;li&gt;VR：90&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;keyframe-animation&#34;&gt;Keyframe Animation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在关键帧之间插值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;physical-simulation&#34;&gt;Physical Simulation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Application&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Cloth&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fluids&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Mass Spring System&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hair&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A Simple Spring&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;理想弹簧：$$ \mathcal f_{a\to b} = k_s(\mathbf b-\mathbf a) $$
+&lt;ul&gt;
+&lt;li&gt;zero rest length&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Non-zero Rest Length：$$ \mathcal f_{a\to b} = k_s{\mathbf b-\mathbf a\over||\mathbf b-\mathbf a||}(||\mathbf b-\mathbf a||-l) $$
+&lt;ul&gt;
+&lt;li&gt;不会停止运动，永远振动&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$$ x,\dot x   一阶导,\ddot x   二阶导$$&lt;/li&gt;
+&lt;li&gt;Simple Motion Damping
+&lt;ul&gt;
+&lt;li&gt;$$ \mathcal f=-k_d\dot{ \mathbf b }$$&lt;/li&gt;
+&lt;li&gt;会停止所有运动（只能表示弹簧外部的损耗，无法表示弹簧内部）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Internal Damping
+&lt;ul&gt;
+&lt;li&gt;$$ \mathcal f_{b} = -k_d{\mathbf b-\mathbf a\over||\mathbf b-\mathbf a||}(\dot {\mathbf b}-\dot {\mathbf a})\cdot {\mathbf b-\mathbf a\over||\mathbf b-\mathbf a|| }$$&lt;/li&gt;
+&lt;li&gt;b 受到的 damping force = b 相对于 a 的速度投影到 a 到 b 方向的大小 *  a 到 b 方向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Structures from Springs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;正方形网格模拟布料
+&lt;ul&gt;
+&lt;li&gt;无法抵抗 shearing&lt;/li&gt;
+&lt;li&gt;无法抵抗 out-of-plane bending&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解决
+&lt;ul&gt;
+&lt;li&gt;网格中间加 X（这个需要很强）&lt;/li&gt;
+&lt;li&gt;隔一个点连接一条，类似 skip connection（起辅助作用）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Finite Element Method（FEM）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;适合做 diffusion（传导）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Particle System&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每帧
+&lt;ul&gt;
+&lt;li&gt;（如果需要）生成新粒子&lt;/li&gt;
+&lt;li&gt;每个粒子计算作用力（内外）&lt;/li&gt;
+&lt;li&gt;更新粒子的位置和速度&lt;/li&gt;
+&lt;li&gt;（如果需要）移除死亡的粒子&lt;/li&gt;
+&lt;li&gt;渲染&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;力
+&lt;ul&gt;
+&lt;li&gt;Attraction and repulsion
+&lt;ul&gt;
+&lt;li&gt;重力，电磁力&lt;/li&gt;
+&lt;li&gt;斥力，弹簧&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Damping
+&lt;ul&gt;
+&lt;li&gt;摩擦力，air drag， viscosity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Collision
+&lt;ul&gt;
+&lt;li&gt;墙，容器，固定物体&lt;/li&gt;
+&lt;li&gt;动态物体，人体各个部位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;kinematics&#34;&gt;Kinematics&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Forward Kinematics
+&lt;ul&gt;
+&lt;li&gt;定义连接的关节&lt;/li&gt;
+&lt;li&gt;每个关节的运动影响后面连接的关节的运动&lt;/li&gt;
+&lt;li&gt;从前往后计算&lt;/li&gt;
+&lt;li&gt;好处：方便&lt;/li&gt;
+&lt;li&gt;坏处：artist 不方便使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Inverse Kinematics
+&lt;ul&gt;
+&lt;li&gt;给定一个后面的关节尖端，自发地反向计算前面关节如何运动&lt;/li&gt;
+&lt;li&gt;非常不好计算&lt;/li&gt;
+&lt;li&gt;解有可能不唯一或者根本不存在&lt;/li&gt;
+&lt;li&gt;使用优化方法来解（牛顿法，梯度下降法）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;rigging&#34;&gt;Rigging&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;类似于木偶，给定一些控制点&lt;/li&gt;
+&lt;li&gt;Blend Shapes
+&lt;ul&gt;
+&lt;li&gt;在控制点间进行插值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Motion Capture
+&lt;ul&gt;
+&lt;li&gt;在真人身上添加控制点&lt;/li&gt;
+&lt;li&gt;好处：快速获得大量的真实数据，现实感很强&lt;/li&gt;
+&lt;li&gt;坏处： 设置复杂开销高，不一定满足需求，需要调整&lt;/li&gt;
+&lt;li&gt;类型：Optical，Magnetic，Mechanical&lt;/li&gt;
+&lt;li&gt;Optical Motion Capture
+&lt;ul&gt;
+&lt;li&gt;显眼的小白球通过摄像机拍摄，方便获得控制点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Motion Data
+&lt;ul&gt;
+&lt;li&gt;Uncanny Valley&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Facial Motion Capture
+&lt;ul&gt;
+&lt;li&gt;Avatar 使用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;production-pipeline&#34;&gt;Production Pipeline&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pre-production
+&lt;ul&gt;
+&lt;li&gt;Idea&lt;/li&gt;
+&lt;li&gt;Story&lt;/li&gt;
+&lt;li&gt;Storyboard&lt;/li&gt;
+&lt;li&gt;Animatic&lt;/li&gt;
+&lt;li&gt;Design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Production
+&lt;ul&gt;
+&lt;li&gt;Layout&lt;/li&gt;
+&lt;li&gt;R&amp;amp;D&lt;/li&gt;
+&lt;li&gt;Modeling&lt;/li&gt;
+&lt;li&gt;Texturing&lt;/li&gt;
+&lt;li&gt;Rigging / Setup&lt;/li&gt;
+&lt;li&gt;Animation&lt;/li&gt;
+&lt;li&gt;VFX&lt;/li&gt;
+&lt;li&gt;Lighting&lt;/li&gt;
+&lt;li&gt;Rendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Post-production
+&lt;ul&gt;
+&lt;li&gt;Compositing&lt;/li&gt;
+&lt;li&gt;2D VFX / Motion Graphics&lt;/li&gt;
+&lt;li&gt;Color Correction&lt;/li&gt;
+&lt;li&gt;Final Output&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture20</title>
+        <link>https://5rLku.github.io/article/games101_lecture20/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:31 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture20/</guid>
+        <description>&lt;h1 id=&#34;color--perception&#34;&gt;Color &amp;amp; Perception&lt;/h1&gt;
+&lt;h2 id=&#34;light-field--lumigraph&#34;&gt;Light Field / Lumigraph&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Plenoptic Function
+&lt;ul&gt;
+&lt;li&gt;reconstruct every possible view，at every moment，from every position，at every wavelength&lt;/li&gt;
+&lt;li&gt;$$ P(\theta,\phi,\lambda,t,V_x,V_y,V_z) $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;光场，是全光函数的一部分，任何位置往任何方向去的光的强度&lt;/li&gt;
+&lt;li&gt;两个数表示方向，两个数表示位置&lt;/li&gt;
+&lt;li&gt;把物体的包围盒看成两个平面，平面上的两个点（u，v）（s，t）定义一条光线&lt;/li&gt;
+&lt;li&gt;类似苍蝇复眼，一个个小透镜把来自不同方向的光分开再记录下来&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;light-camera&#34;&gt;Light Camera&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;支持后期重新聚焦（Computational Refocusing）&lt;/li&gt;
+&lt;li&gt;把一个像素的 irradiance 记录为一块各种 radiances&lt;/li&gt;
+&lt;li&gt;每个像素选同样方向的 radiance，可还原为照片（换这个固定方向的 radiance 相当于移动相机）&lt;/li&gt;
+&lt;li&gt;问题：通常分辨率不足，成本高&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;physical-basis-of-color&#34;&gt;Physical Basis of Color&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;光谱，特别是可见光&lt;/li&gt;
+&lt;li&gt;Spectral Power Distribution（SPD）谱功率密度
+&lt;ul&gt;
+&lt;li&gt;线性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;颜色是人的感知，光的波长并不是颜色&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;biological-basis-of-color&#34;&gt;Biological Basis of Color&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Rod cells 感知光强&lt;/li&gt;
+&lt;li&gt;Cone cells 感知颜色
+&lt;ul&gt;
+&lt;li&gt;S，M，L&lt;/li&gt;
+&lt;li&gt;分别感知小波长，中波长，长波长&lt;/li&gt;
+&lt;li&gt;产生 3 个数，送到人脑，产生颜色感知&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;metamerism&#34;&gt;Metamerism&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;同色异谱现象&lt;/li&gt;
+&lt;li&gt;不同光谱有着同样的 S，M，L 的感知（同样的颜色）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;color-reproduction--matching&#34;&gt;Color Reproduction / Matching&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Addictive Color&lt;/li&gt;
+&lt;li&gt;CIE RGB Color Matching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;color-space&#34;&gt;Color Space&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Standardized RGB（sRGB）
+&lt;ul&gt;
+&lt;li&gt;广泛应用&lt;/li&gt;
+&lt;li&gt;色域有限&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CIE XYZ
+&lt;ul&gt;
+&lt;li&gt;Y 一定程度表示亮度&lt;/li&gt;
+&lt;li&gt;色域图像：归一化，固定 Y 去画&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Perceptually Organized Color Spaces
+&lt;ul&gt;
+&lt;li&gt;HSV（Hue - Saturation - Value）&lt;/li&gt;
+&lt;li&gt;色调，饱和度，亮度&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CIELAB（L*a*b*）
+&lt;ul&gt;
+&lt;li&gt;亮度（黑白），红绿，蓝黄三个轴&lt;/li&gt;
+&lt;li&gt;Opponent Color
+&lt;ul&gt;
+&lt;li&gt;人脑决定的&lt;/li&gt;
+&lt;li&gt;颜色是相对的（Relative）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;CMYK
+&lt;ul&gt;
+&lt;li&gt;subtractive color space&lt;/li&gt;
+&lt;li&gt;cyan，magenta，yellow，key&lt;/li&gt;
+&lt;li&gt;带黑色为了不浪费彩色墨水（黑色墨水便宜）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;not-cover&#34;&gt;Not Cover&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;High Dynamic Range（HDR）&lt;/li&gt;
+&lt;li&gt;Gamma correction&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture19</title>
+        <link>https://5rLku.github.io/article/games101_lecture19/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:26 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture19/</guid>
+        <description>&lt;h1 id=&#34;cameras-lens--light-fields&#34;&gt;Cameras, Lens &amp;amp; Light Fields&lt;/h1&gt;
+&lt;h2 id=&#34;cameras&#34;&gt;Cameras&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;传感器记录 irradiance&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;pinhole-image-formation&#34;&gt;Pinhole Image Formation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;无法拍摄出景深（depth of field）&lt;/li&gt;
+&lt;li&gt;可以用 focal length 和 sensor大小 定义 FOV
+&lt;ul&gt;
+&lt;li&gt;一般固定使用 35mm 的胶片大小来定义&lt;/li&gt;
+&lt;li&gt;那么 focal length 就决定 FOV&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;exposure&#34;&gt;Exposure&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;H = Time x Irradiance（T x E）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;T 由 快门 shutter 决定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;E 由光圈大小 lens aperture 和 focal length 决定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aperture size&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;f-stop&lt;/li&gt;
+&lt;li&gt;光圈直径的逆（Informal Understanding）&lt;/li&gt;
+&lt;li&gt;越小，光圈越大&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Shutter speed&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;快门时间不够，进入的光子数量少，noisy&lt;/li&gt;
+&lt;li&gt;Motion Blur：快门时间大，记录运动物体会有 blur&lt;/li&gt;
+&lt;li&gt;Rolling Shutter：照片不同部分在不同时间被记录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ISO gain&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在 analog - digital 转换的时候乘在 signal 上&lt;/li&gt;
+&lt;li&gt;线性&lt;/li&gt;
+&lt;li&gt;过大，也会放大噪声&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;大光圈引起浅景深，快门时间影响运动模糊&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;两者无法兼得&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;High-speed Photography&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Normal exposure = extremely fast shutter time x （large aperture and/or high ISO）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Long-exposure Photography&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;延时摄影&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;thin-lens-approximation&#34;&gt;Thin Lens Approximation&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Ideal：平行光进来产生一个焦点，焦点光进来产生平行光，光穿过透镜中心不改变方向&lt;/li&gt;
+&lt;li&gt;认为可以随意改变焦距（现实中使用不同焦距的透镜组合来模拟）&lt;/li&gt;
+&lt;li&gt;Gaussian Thin Lens Equation：焦距倒数 = 像距倒数 + 物距倒数&lt;/li&gt;
+&lt;li&gt;Defocus Blur
+&lt;ul&gt;
+&lt;li&gt;Circle of Confusion&lt;/li&gt;
+&lt;li&gt;远处的物体的点到达传感器的时候变成了一片圆面积&lt;/li&gt;
+&lt;li&gt;由相似三角形得到，（其他距离定下来的情况下）CoC 和 aperture size 成正比&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;F-Number/F-stop
+&lt;ul&gt;
+&lt;li&gt;focal length / diameter of aperture&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Ray Tracing Ideal Thin Lens
+&lt;ul&gt;
+&lt;li&gt;sensor 上的一个点&lt;/li&gt;
+&lt;li&gt;随机采样 lens 上的点&lt;/li&gt;
+&lt;li&gt;计算穿过 lens 和 sensor 的光的交点&lt;/li&gt;
+&lt;li&gt;计算交点到 lens 的 radiance，记录到 sensor 的点上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;depth-of-field&#34;&gt;Depth of Field&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;认为场景中某段区域内，CoC 足够小，这段区域的成像就是清晰的（CoC 与像素大小相比）&lt;/li&gt;
+&lt;li&gt;Depth of Field 大小就是该区域大小&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture18</title>
+        <link>https://5rLku.github.io/article/games101_lecture18/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:23 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture18/</guid>
+        <description>&lt;h1 id=&#34;advanced-topics-in-rendering&#34;&gt;Advanced Topics in Rendering&lt;/h1&gt;
+&lt;h2 id=&#34;advance-light-transport&#34;&gt;Advance Light Transport&lt;/h2&gt;
+&lt;h3 id=&#34;unbiasedbiased-light-transport-methods&#34;&gt;Unbiased/Biased light transport methods&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;unbiased：不管用多少样本进行 monte carlo 估计，期望都是正确的&lt;/li&gt;
+&lt;li&gt;biased：有限次采样，结果会有偏差，但无限次采样，期望会收敛到正确值（consistent）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;unbiased&#34;&gt;Unbiased&lt;/h4&gt;
+&lt;h5 id=&#34;bidirectional-path-tracing&#34;&gt;Bidirectional Path Tracing&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;从相机和光源同时生成 sub-paths&lt;/li&gt;
+&lt;li&gt;连接 sub-paths 的终点&lt;/li&gt;
+&lt;li&gt;难实现，慢&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;metropolis-light-transport&#34;&gt;Metropolis Light Transport&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Markov Chain Monte Carlo&lt;/li&gt;
+&lt;li&gt;局部的方法&lt;/li&gt;
+&lt;li&gt;局部对已经存在的光线进行扰动，产生新光线&lt;/li&gt;
+&lt;li&gt;收敛速度难以估计&lt;/li&gt;
+&lt;li&gt;局部，每个像素收敛速度不一样，画面脏&lt;/li&gt;
+&lt;li&gt;无法渲染动画&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;biased&#34;&gt;Biased&lt;/h4&gt;
+&lt;h5 id=&#34;photon-mapping&#34;&gt;Photon Mapping&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;擅长渲染 caustics&lt;/li&gt;
+&lt;li&gt;two-stage 的方法&lt;/li&gt;
+&lt;li&gt;stage 1
+&lt;ul&gt;
+&lt;li&gt;photon tracing&lt;/li&gt;
+&lt;li&gt;从光源发射 photons，不断弹射并记录，直到打在 diffuse 表面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;stage 2
+&lt;ul&gt;
+&lt;li&gt;photon collection&lt;/li&gt;
+&lt;li&gt;从摄像机发射 sub-paths，不断弹射并记录，直到打在 diffuse 表面&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;计算
+&lt;ul&gt;
+&lt;li&gt;local density estimation&lt;/li&gt;
+&lt;li&gt;有更多 photons 的地方应该更亮&lt;/li&gt;
+&lt;li&gt;给定一个点，找最近的 N 个 photons，找他们覆盖的面积&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;photon 数量多，noisy/数量少，blurry
+&lt;ul&gt;
+&lt;li&gt;足够多，覆盖的面积更小，更接近真实&lt;/li&gt;
+&lt;li&gt;不是无限多，都会不是正确的，只是接近，所以会 blurry&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;如果选择固定的面积，就不再 consistent&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;vertex-connection-and-merging&#34;&gt;Vertex Connection and Merging&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;combination of BDPT &amp;amp; Photon Mapping&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;instant-radiosityir&#34;&gt;Instant Radiosity（IR）&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;many-light approaches&lt;/li&gt;
+&lt;li&gt;已经被照亮的面都可以看成光源&lt;/li&gt;
+&lt;li&gt;从光源生成 sub-paths，终点生成 Virtual Point Light（VPL）&lt;/li&gt;
+&lt;li&gt;使用 VPL 来渲染场景&lt;/li&gt;
+&lt;li&gt;快速，diffuse 场景效果好&lt;/li&gt;
+&lt;li&gt;离 shading point 很近的点会产生亮点（考虑从光源采样的距离项）&lt;/li&gt;
+&lt;li&gt;无法处理 glossy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;advanced-appearance-model&#34;&gt;Advanced Appearance Model&lt;/h2&gt;
+&lt;h3 id=&#34;non-surface-models&#34;&gt;Non-surface Models&lt;/h3&gt;
+&lt;h5 id=&#34;participating-media&#34;&gt;Participating Media&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;雾，云&lt;/li&gt;
+&lt;li&gt;光线穿过时会被吸收和散射&lt;/li&gt;
+&lt;li&gt;Phase Function 决定如何散射&lt;/li&gt;
+&lt;li&gt;渲染
+&lt;ul&gt;
+&lt;li&gt;随机选方向弹射&lt;/li&gt;
+&lt;li&gt;随机选距离前进&lt;/li&gt;
+&lt;li&gt;每个 &amp;ldquo;shading point&amp;rdquo; 和光源连接&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;hair--fur--fiber-bcsdf&#34;&gt;Hair / Fur / Fiber （BCSDF）&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Kajiya-Kay Model&lt;/li&gt;
+&lt;li&gt;Marschner Model
+&lt;ul&gt;
+&lt;li&gt;Glass-like cylinder&lt;/li&gt;
+&lt;li&gt;cuticle &amp;amp; cortex（absorbs）&lt;/li&gt;
+&lt;li&gt;R，TT，TRT 三种光线传播&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Double Cylinder Model：Medulla 也重要
+&lt;ul&gt;
+&lt;li&gt;R，TT，TRT，TTs，TRTs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;granular-material&#34;&gt;Granular material&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;香料，盐等一粒一粒的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;surface-models&#34;&gt;Surface Models&lt;/h4&gt;
+&lt;h5 id=&#34;translucent-materialbssrdf&#34;&gt;Translucent material（BSSRDF）&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;subsurfaces scattering&lt;/li&gt;
+&lt;li&gt;scattering functions，BSSRDF&lt;/li&gt;
+&lt;li&gt;Dipole Approximation
+&lt;ul&gt;
+&lt;li&gt;用两个光源近似&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;cloth&#34;&gt;Cloth&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;Fibers to Ply to Yarn&lt;/li&gt;
+&lt;li&gt;Render as Surface：考虑编织的 pattern，处理为 surface，使用 BRDF&lt;/li&gt;
+&lt;li&gt;Render as Participating Media&lt;/li&gt;
+&lt;li&gt;Render as Actual Fibers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&#34;detailed-materialnon-statistical-brdf&#34;&gt;Detailed Material（Non-statistical BRDF）&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;考虑像素覆盖的微表面的法线分布，替代 BRDF 中光滑的法线分布&lt;/li&gt;
+&lt;li&gt;Recent Trend： Wave Optics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;procedural-appearance&#34;&gt;Procedural Appearance&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;不生成，需求的时候实时计算&lt;/li&gt;
+&lt;li&gt;compute noise function&lt;/li&gt;
+&lt;li&gt;perlin noise&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture17</title>
+        <link>https://5rLku.github.io/article/games101_lecture17/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:20 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture17/</guid>
+        <description>&lt;h1 id=&#34;materials--appearances&#34;&gt;Materials &amp;amp; Appearances&lt;/h1&gt;
+&lt;h2 id=&#34;material--brdf&#34;&gt;Material == BRDF&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Diffuse / Lambertian Material&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;能量守恒，入射和出射的 irradiance 相同&lt;/li&gt;
+&lt;li&gt;所有入射均匀地出射，radiance 也相同&lt;/li&gt;
+&lt;li&gt;BRDF 和 radiance 则为常数，提出来然后根据渲染方程积分&lt;/li&gt;
+&lt;li&gt;$$ L_o(\omega_o)=\pi f_rL_i $$ $$ f_r = {\rho(albedo)\over\pi}  $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Glossy Metal 材质在镜面反射方向的一个小范围内产生多次反射&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Glass 材质一部分折射进入，一部分镜面反射&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;任何出射方向均可以用类似立体角的定义方式，通过两个夹角和入射方向来计算&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;物体内外折射率和法线夹角的正弦的乘积相同&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果物体外的折射率 大于 物体内的折射率，则不会发生折射（不为实数），此时发生全反射&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fresnel Term&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;对于同一个物体来说，入射角度和法线的夹角会影响光的反射量&lt;/li&gt;
+&lt;li&gt;Schlick&amp;rsquo;s approximation：$$ R_0 = ({n_1 - n_2 \over n_1 + n_2})^2 $$ $$ R(\theta) = R_0 + (1-R_0)(1-\cos\theta)^5 $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Microfacet Material&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Macroscale： flat &amp;amp; rough（材质和外观）&lt;/li&gt;
+&lt;li&gt;Microscale： bumpy &amp;amp; specular（几何）&lt;/li&gt;
+&lt;li&gt;Microfacet BRDF
+&lt;ul&gt;
+&lt;li&gt;$$ f(\mathbf i, \mathbf o)={\mathbf F(\mathbf i, \mathbf h) \mathbf G(\mathbf i, \mathbf o, \mathbf h) \mathbf D(\mathbf h)\over 4(\mathbf n \cdot \mathbf i)(\mathbf n \cdot \mathbf o)} $$&lt;/li&gt;
+&lt;li&gt;Fresnel Term $$ \mathbf F(\mathbf i, \mathbf h) $$&lt;/li&gt;
+&lt;li&gt;考虑一些微表面被遮挡住无法接收光照：Shadowing-masking Term $$ \mathbf G(\mathbf i, \mathbf o, \mathbf h) $$&lt;/li&gt;
+&lt;li&gt;考虑物体表面的法线分布：Distribution of normals  $$ \mathbf D(\mathbf h) $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Isotropic / Anisotropic Materials（BRDFs）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;决定 Directionality&lt;/li&gt;
+&lt;li&gt;旋转入射方向和出射方向，BRDF相同则为各向同性，否则为各向异性（只和相对的方位角有关）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BRDF 性质&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;非负&lt;/li&gt;
+&lt;li&gt;线性：可拆分，可组合&lt;/li&gt;
+&lt;li&gt;可逆性 Reciprocity：交换入射出射方向，不变&lt;/li&gt;
+&lt;li&gt;能量守恒&lt;/li&gt;
+&lt;li&gt;各向同性：可以简化为三个参数（方位的相对角） + 可逆性：只考虑相对角的绝对值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;测量 BRDF&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;gonioreflectometer&lt;/li&gt;
+&lt;li&gt;MERL BRDF Database&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture16</title>
+        <link>https://5rLku.github.io/article/games101_lecture16/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:17 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture16/</guid>
+        <description>&lt;h1 id=&#34;ray-tracing-4-monte-carlo-path-tracing&#34;&gt;Ray Tracing 4 (Monte Carlo Path Tracing)&lt;/h1&gt;
+&lt;h2 id=&#34;monte-carlo-integration&#34;&gt;Monte Carlo Integration&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在积分区域内随机采样，每次采样取得一个长方形面积（积分），最后把所有采样平均，来近似得到该函数的定积分&lt;/li&gt;
+&lt;li&gt;$$ \int f(x)dx={1\over N} \sum_{i=1}^N {f(X_i)\over p(X_i)}, X_i \sim p(x)$$&lt;/li&gt;
+&lt;li&gt;采样越多，结果越准&lt;/li&gt;
+&lt;li&gt;采样 x，在 x 上积分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;path-tracing&#34;&gt;Path Tracing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Whitted-Style Ray Tracing Problem
+&lt;ul&gt;
+&lt;li&gt;specular 反射，无法处理 glossy&lt;/li&gt;
+&lt;li&gt;diffuse 停止，无法处理 间接光照&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;渲染方程
+&lt;ul&gt;
+&lt;li&gt;积分如何计算？
+&lt;ul&gt;
+&lt;li&gt;Monte Carlo&lt;/li&gt;
+&lt;li&gt;只考虑直接光照的话
+&lt;ul&gt;
+&lt;li&gt;计算 shade（p，wo）&lt;/li&gt;
+&lt;li&gt;随机选取 N 个方向 wi ~ pdf&lt;/li&gt;
+&lt;li&gt;Lo = 0&lt;/li&gt;
+&lt;li&gt;对每个 wi 追踪，如果打到光源，Lo += （1/N）* Li * fr * cosine  / pdf（wi）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;把间接光照的产生物体考虑为光源，等同于直接光照
+&lt;ul&gt;
+&lt;li&gt;对每个 wi 追踪，如果打到物体 q，Lo += （1/N）*  shade（q，-wi） * fr * cosine  / pdf（wi）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;存在问题
+&lt;ul&gt;
+&lt;li&gt;考虑的光线太多（如果 100 根光线都打到第二个物体，会产生 10000 根新光线）
+&lt;ul&gt;
+&lt;li&gt;每次只随机考虑 1 根光线，光线数就不会增长（也就是 Path Tracing）&lt;/li&gt;
+&lt;li&gt;但是这样太 Noisy。考虑从每个像素处增加采样点，每个采样点只发出一根光线&lt;/li&gt;
+&lt;li&gt;Ray Generation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;递归如何执行？
+&lt;ul&gt;
+&lt;li&gt;递归不会停止&lt;/li&gt;
+&lt;li&gt;Russian Roulette
+&lt;ul&gt;
+&lt;li&gt;给定一个概率 P，每次以概率 P 继续发射光线，1-P 概率不继续发射光线&lt;/li&gt;
+&lt;li&gt;随机数在 P 的时候，计算为 Lo / P&lt;/li&gt;
+&lt;li&gt;在 1-P 的时候，计算为 0&lt;/li&gt;
+&lt;li&gt;好处：期望没有改变，E = P *（Lo / P） + （1-P）* 0 = Lo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;目前的方法不够 Efficient
+&lt;ul&gt;
+&lt;li&gt;均匀采样的情况下很多光线并没有打到光源&lt;/li&gt;
+&lt;li&gt;考虑在光源上面采样，把积分转化为在光源上积分&lt;/li&gt;
+&lt;li&gt;找到光源上 dA 和 平面上 dw 的关系，完成积分转化（两个法线和光方向的夹角，立体角的定义，微积分知识）&lt;/li&gt;
+&lt;li&gt;将光照分为：光源的直接贡献 + 其他反射的贡献&lt;/li&gt;
+&lt;li&gt;最后的一点修改：如果考虑光源贡献时中间有物体挡住，就设为 0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;一些 Side Notes
+&lt;ul&gt;
+&lt;li&gt;路径追踪不好处理点光源（一般为面光源），需要点光源时可以做成很小面积的面光源&lt;/li&gt;
+&lt;li&gt;能做到 Photo-realistic&lt;/li&gt;
+&lt;li&gt;Ray Tracing 包括一系列的光线传播的综合方法（个人理解）
+&lt;ul&gt;
+&lt;li&gt;Unidirectional &amp;amp; bidirectional path tracing&lt;/li&gt;
+&lt;li&gt;photon mapping&lt;/li&gt;
+&lt;li&gt;Metropolis light transport&lt;/li&gt;
+&lt;li&gt;VCM / UPBP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;没 cover 的
+&lt;ul&gt;
+&lt;li&gt;Uniformly Sampling the hemisphere 如何做？&lt;/li&gt;
+&lt;li&gt;什么 pdf 是最好的？（importance sampling）&lt;/li&gt;
+&lt;li&gt;随机数很重要（low discrepancy sequences）&lt;/li&gt;
+&lt;li&gt;采样半球和采样光源结合（multiple imp. sampling）&lt;/li&gt;
+&lt;li&gt;pixel 上的光线如何平均（pixel reconstruction filter）&lt;/li&gt;
+&lt;li&gt;radiance 不是像素的颜色（gamma correction，curves，color space）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture15</title>
+        <link>https://5rLku.github.io/article/games101_lecture15/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:14 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture15/</guid>
+        <description>&lt;p&gt;#Ray Tracing 3 (Light Transport &amp;amp; Global Illumination)&lt;/p&gt;
+&lt;h2 id=&#34;irradiance&#34;&gt;Irradiance&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;与每单位面积的平面垂直的光&lt;/li&gt;
+&lt;li&gt;intensity 没有在球壳上衰减，是球壳面积变大导致 irradiance 在衰减&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;radiance&#34;&gt;Radiance&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在单位立体角 以及 单位面积上的光&lt;/li&gt;
+&lt;li&gt;Radiance = Irradiance per unit solid angle = Intensity per projected unit area&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;bidirectional-reflectance-distribution-function-brdf&#34;&gt;Bidirectional Reflectance Distribution Function （BRDF）&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在一个点的反射
+&lt;ul&gt;
+&lt;li&gt;考虑一个单位面积，某个入射方向的 Radiance，投影到垂直于平面方向，得到该平面的 Irradiance&lt;/li&gt;
+&lt;li&gt;考虑该 Irradiance 通过什么比例分配给该单位面积各个方向的反射的 Radiance&lt;/li&gt;
+&lt;li&gt;该比例就是 BRDF（d Radiance / d Irradiance）&lt;/li&gt;
+&lt;li&gt;定义了物体的材质&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;反射方程
+&lt;ul&gt;
+&lt;li&gt;考虑单位面积的各个不同的入射，积分得到某个单方向的出射&lt;/li&gt;
+&lt;li&gt;$$ L_r(p,\omega_r) = \int_{H^2}f_r(p, \omega_i \to \omega_r)L_i(p, \omega_i)\cos\theta_id\omega_i $$&lt;/li&gt;
+&lt;li&gt;递归的方程&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;渲染方程
+&lt;ul&gt;
+&lt;li&gt;重写反射方程，加上自发光项&lt;/li&gt;
+&lt;li&gt;$$ L_o(p,\omega_o) = L_e(p, \omega_o) + \int_{\Omega^+}L_i(p, \omega_i)f_r(p, \omega_i,\omega_o)(n\cdot\omega_i)d\omega_i $$&lt;/li&gt;
+&lt;li&gt;假设所有光线都朝外，在半球上（平面内部的光线不考虑）&lt;/li&gt;
+&lt;li&gt;概念：某个方向的 Radiance = 该点辐射的 Radiance + 该点反射的 Radiance&lt;/li&gt;
+&lt;li&gt;简写：$$ L = E + KL $$&lt;/li&gt;
+&lt;li&gt;化简加泰勒展开：$$ L = E + KE + K^2E + K^3E + &amp;hellip; $$&lt;/li&gt;
+&lt;li&gt;得到：光源直接光照 + 平面直接光照(在该平面反射一次) + 间接光照(在该平面反射后又从其他平面反射回来的)+ 弹射更多次的间接光照 + &amp;hellip;&lt;/li&gt;
+&lt;li&gt;全局光照 = 直接光照 + 间接光照，光栅化 = 光源直接光照 + 平面直接光照&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;probability-review&#34;&gt;Probability Review&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Random Variable&lt;/li&gt;
+&lt;li&gt;Probability Density Function（PDF）：和为 1&lt;/li&gt;
+&lt;li&gt;Expected Value：求和（变量值 X 概率）&lt;/li&gt;
+&lt;li&gt;Continuous：
+&lt;ul&gt;
+&lt;li&gt;某变量概率 = PDF 在该变量小范围求积分（面积）&lt;/li&gt;
+&lt;li&gt;PDF 的积分为 1&lt;/li&gt;
+&lt;li&gt;期望 = 求积分（变量 X PDF）&lt;/li&gt;
+&lt;li&gt;$$ X \sim p(x), Y = f(X)$$$$ E[Y] = E[f(X)] = \int f(x)p(x)dx$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture14</title>
+        <link>https://5rLku.github.io/article/games101_lecture14/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:10 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture14/</guid>
+        <description>&lt;h1 id=&#34;ray-tracing-2-acceleration--radiometry&#34;&gt;Ray Tracing 2 (Acceleration &amp;amp; Radiometry)&lt;/h1&gt;
+&lt;h2 id=&#34;acceleration&#34;&gt;Acceleration&lt;/h2&gt;
+&lt;h3 id=&#34;using-aabb&#34;&gt;Using AABB&lt;/h3&gt;
+&lt;h4 id=&#34;uniform-grids&#34;&gt;Uniform Grids&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;建立加速格子的预处理
+&lt;ul&gt;
+&lt;li&gt;找到包围盒（包围盒是大范围）&lt;/li&gt;
+&lt;li&gt;划分格子&lt;/li&gt;
+&lt;li&gt;记录存在物体的格子（注意是三角形网格，物体内部的格子不算存在）&lt;/li&gt;
+&lt;li&gt;遍历光线走过的格子&lt;/li&gt;
+&lt;li&gt;经过有物体的格子则和该格子中所有物体进行相交判断&lt;/li&gt;
+&lt;li&gt;（与光线相交的下一个格子一定是当前格子的某个相邻格子，有计算方法）[光栅化直线]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;格子分辨率：
+&lt;ul&gt;
+&lt;li&gt;太小，遍历物体太多&lt;/li&gt;
+&lt;li&gt;太大，遍历格子太多&lt;/li&gt;
+&lt;li&gt;启发式的算法总结：#cells = C * #objs，C 大致在 27（3D情况下）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;物体在场景中分布均匀的时候效果好&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Teapot in the stadium&amp;rdquo; 效果差&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;spatial-partition&#34;&gt;Spatial Partition&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;（物体约等于三角形）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;常见&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Oct-Tree：空间划分为八块（高维度表现差）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;KD-Tree：空间沿着某个轴砍成两块（与维度无关），每次的划分轴按 xyz 顺序排队&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;BSP-Tree：也砍成两块，但非轴向（且高维度时划分复杂）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;KD-Tree 预处理：形成一颗二叉树&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;KD-Tree 数据结构&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;非叶子节点记录
+&lt;ul&gt;
+&lt;li&gt;划分轴&lt;/li&gt;
+&lt;li&gt;划分位置：划分平面的坐标&lt;/li&gt;
+&lt;li&gt;儿子指针&lt;/li&gt;
+&lt;li&gt;（不记录物体）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;叶子节点记录
+&lt;ul&gt;
+&lt;li&gt;包含的物体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查找相交：遍历 KD-Tree&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;问题：很难判定一个三角形是否和划分的 AABB 有交集&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;问题：一个物体可能存在多个不同的叶子节点里&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;object-partition--bounding-volume-hierarchybvh&#34;&gt;Object Partition &amp;amp; Bounding Volume Hierarchy（BVH）&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;划分物体为两部分后重新计算子的 AABB&lt;/li&gt;
+&lt;li&gt;性质：一个物体只在一个盒子里 且 AABB 很好求&lt;/li&gt;
+&lt;li&gt;问题：不同的 AABB 会相交 &amp;mdash; 怎么划分很重要&lt;/li&gt;
+&lt;li&gt;Building BVH
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;划分：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;总选最长轴切开&lt;/li&gt;
+&lt;li&gt;从中间的物体分开&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;终止&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;节点只包含少量物体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;数据结构&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;非叶子节点：Bounding Box 和 指针&lt;/li&gt;
+&lt;li&gt;叶子节点：Bounding Box 和 物体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;basic-radiography&#34;&gt;Basic Radiography&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;定义光&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;精确描述光的空间特性：Radiant flux（power），Intensity，Irradiance，Radiance&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;物理层面表示光照的计算&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解释&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Radiant Energy：能量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Radiant Flux：单位时间的能量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Intensity：从源发出的光&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Irradiance：被表面接收的光&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Radiance：射线传播的光&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Radiant Intensity&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;每 Solid Angle 的 Power&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Solid Angle&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;三维中，球面上的面积 A 除以球半径平方 r^2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;球有 $ 4\pi $ 立体角&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Differential Solid Angle&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;两个小角度产生的小面积的立体角&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$$ d\omega = {dA\over r^2} = \sin\theta d \theta d\phi$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$ \omega $ 看成从原点出发的单位向量（光照）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Isotropic Point Light 的能量在球面上&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;每个方向（单位立体角）上对应的强度为光的总能量除以 $4\pi$&lt;/li&gt;
+&lt;li&gt;$$ I = {\Phi\over4\pi} $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture13</title>
+        <link>https://5rLku.github.io/article/games101_lecture13/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:07 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture13/</guid>
+        <description>&lt;h1 id=&#34;ray-tracing-1-whitted-style-ray-tracing&#34;&gt;Ray Tracing 1 (Whitted-Style Ray Tracing)&lt;/h1&gt;
+&lt;h2 id=&#34;why&#34;&gt;Why&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;光栅化不好表现全局的效果
+&lt;ul&gt;
+&lt;li&gt;Soft Shadow&lt;/li&gt;
+&lt;li&gt;Glossy Reflection&lt;/li&gt;
+&lt;li&gt;Indirect Illumination&lt;/li&gt;
+&lt;li&gt;尤其是光线不止弹射一次的情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;光栅化，快速近似，效果相对差&lt;/li&gt;
+&lt;li&gt;光线追踪，效果好，但是慢&lt;/li&gt;
+&lt;li&gt;光栅化常常实时，光线追踪常常离线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;basic-ray-tracing-algorithm&#34;&gt;Basic Ray Tracing Algorithm&lt;/h2&gt;
+&lt;h3 id=&#34;light-rays&#34;&gt;Light Rays&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;基础概念假设（不一定在物理上对）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;光沿直线传播&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;光线之间不会碰撞&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;光线从光源出发，传播后最终到达人眼（reciprocity，可逆性）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ray-casting&#34;&gt;Ray Casting&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Generate Eye Rays
+&lt;ul&gt;
+&lt;li&gt;眼睛到每个像素发出 Eye Ray&lt;/li&gt;
+&lt;li&gt;和场景中物体产生 Closest Intersection Point&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Shading Pixels（Local Only）
+&lt;ul&gt;
+&lt;li&gt;从 Closest Intersection Point 往光源连一条 Shadow Ray&lt;/li&gt;
+&lt;li&gt;根据入射、出射、法线来计算 Shading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recursivewhitted-styleray-tracing&#34;&gt;Recursive（Whitted-Style）Ray Tracing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;考虑所有反射和折射的光线&lt;/li&gt;
+&lt;li&gt;在每个 Intersection Point 都连 Shadow Ray&lt;/li&gt;
+&lt;li&gt;综合考虑所有 Intersection Point 的 Shading&lt;/li&gt;
+&lt;li&gt;眼睛发出的叫 Primary Ray，反射折射的叫 Secondary Rays&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ray-surface-intersection&#34;&gt;Ray-Surface Intersection&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Ray Equation&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;光为有起点，有方向的向量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ray： $ \textbf r(t) = \textbf o + t\textbf d, 0\le t &amp;lt;\infty$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ray Intersection with Sphere&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sphere： $ \textbf p:(\textbf p-\textbf c)^2 - R^2 = 0$&lt;/li&gt;
+&lt;li&gt;交点应同时满足两个式子： $$ (\textbf o + t\textbf d-\textbf c)^2 - R^2 = 0$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ray Intersection with Implicit Surface&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Surface： $ \textbf p:f(\textbf p) = 0$&lt;/li&gt;
+&lt;li&gt;代入： $$ \textbf p:f(\textbf o + t\textbf d) = 0$$&lt;/li&gt;
+&lt;li&gt;解出 real 和 positive 的解&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ray Intersection with Triangle Mesh&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;封闭物体内的点发出的光线一定与物体有奇数个交点，外一定有偶数个&lt;/li&gt;
+&lt;li&gt;计算
+&lt;ul&gt;
+&lt;li&gt;Simple：与每个三角形都判断是否相交，慢（加速）&lt;/li&gt;
+&lt;li&gt;Ray Intersection with Triangle
+&lt;ul&gt;
+&lt;li&gt;转换为和三角形所在的平面相交&lt;/li&gt;
+&lt;li&gt;再判定相交点在三角形的内/外&lt;/li&gt;
+&lt;li&gt;Plane
+&lt;ul&gt;
+&lt;li&gt;由一个法线和一个点定义（只有法线不行，可以沿着法线移动）&lt;/li&gt;
+&lt;li&gt;$ \textbf p:(\textbf p - \textbf p\prime)\cdot \textbf N = 0$  ==&amp;gt;  $ax+by+cz+d = 0$&lt;/li&gt;
+&lt;li&gt;代入： $$ \textbf p:(\textbf o + t\textbf d - \textbf p\prime)\cdot \textbf N = 0$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Moller Trumbore Algorithm
+&lt;ul&gt;
+&lt;li&gt;使用重心坐标表示和三角形所在平面的交点&lt;/li&gt;
+&lt;li&gt;求出重心坐标系数和 t
+&lt;ul&gt;
+&lt;li&gt;要求 t 为正&lt;/li&gt;
+&lt;li&gt;若系数均为正，则在三角形内&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Accelerating Ray-Surface Intersection
+&lt;ul&gt;
+&lt;li&gt;Naive：#pixels X #objects X（#bounces）&lt;/li&gt;
+&lt;li&gt;Bounding Volume：光线要与物体相交，必须先和 Bounding Volume 相交&lt;/li&gt;
+&lt;li&gt;Ray Intersection with Box
+&lt;ul&gt;
+&lt;li&gt;Box： 3 pairs of slabs&lt;/li&gt;
+&lt;li&gt;Ray Intersection with AABB
+&lt;ul&gt;
+&lt;li&gt;光线进入 Box 要求光线同时进入所有 slabs&lt;/li&gt;
+&lt;li&gt;光线离开 Box 要求光线离开任意一对 slabs&lt;/li&gt;
+&lt;li&gt;每对 slabs 计算 t_min 和 t_max（暂时不考虑正负）&lt;/li&gt;
+&lt;li&gt;t_enter = max(t_min), t_exit = min(t_max)&lt;/li&gt;
+&lt;li&gt;如果 t_enter &amp;lt; t_exit，则相交，反之不相交&lt;/li&gt;
+&lt;li&gt;考虑正负（ray，not line）
+&lt;ul&gt;
+&lt;li&gt;t_exit &amp;lt; 0 ==&amp;gt; box 在光线后面 ，不相交&lt;/li&gt;
+&lt;li&gt;t_exit &amp;gt;= 0 &amp;amp;&amp;amp; t_enter &amp;lt; 0 ==&amp;gt; 光线起点在 box 里面，相交&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;总结：相交时，t_exit &amp;gt;= 0 或者 t_enter &amp;lt; t_exit&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;轴向 slabs 可以减少计算，只考虑该轴的值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture12</title>
+        <link>https://5rLku.github.io/article/games101_lecture12/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:04 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture12/</guid>
+        <description>&lt;h1 id=&#34;geometry-3&#34;&gt;Geometry 3&lt;/h1&gt;
+&lt;h2 id=&#34;geometry-processing&#34;&gt;Geometry Processing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mesh Subdivision：上采样&lt;/li&gt;
+&lt;li&gt;Mesh Simplification：下采样，保持形状/连接关系&lt;/li&gt;
+&lt;li&gt;Mesh Regularization：提高三角形质量（个数不变）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mesh-subdivision&#34;&gt;Mesh Subdivision&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Loop Subdivision
+&lt;ul&gt;
+&lt;li&gt;一个三角形分为四个三角形&lt;/li&gt;
+&lt;li&gt;根据 weights 调整新顶点的位置（新老顶点 updated differently）
+&lt;ul&gt;
+&lt;li&gt;新顶点：考虑老顶点的加权&lt;/li&gt;
+&lt;li&gt;老顶点：考虑度和一个数，考虑自己位置和周围老顶点的位置和&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Catmull-Clark Subdivision
+&lt;ul&gt;
+&lt;li&gt;非三角形也能用（General Mesh）&lt;/li&gt;
+&lt;li&gt;Quad face 和 Non-quad face&lt;/li&gt;
+&lt;li&gt;Extraordinary vertex，奇异点（度不为4）&lt;/li&gt;
+&lt;li&gt;每次细分：每个面加一点，每条边加中点，连起来&lt;/li&gt;
+&lt;li&gt;每次细分会增加 Non-quad face 个奇异点，之后全部为 Quda face，不会再增加奇异点&lt;/li&gt;
+&lt;li&gt;更新：考虑面的新点，边的新点和老顶点三种情况&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mesh-simplification&#34;&gt;Mesh Simplification&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Edge Collapse
+&lt;ul&gt;
+&lt;li&gt;Quadric Error Metrics：最小化到之前相关面的 L2 距离（平方和距离）&lt;/li&gt;
+&lt;li&gt;从 Error 最小的开始坍缩&lt;/li&gt;
+&lt;li&gt;坍缩后会引起其他的 Error 变化
+&lt;ul&gt;
+&lt;li&gt;实时更新变化：使用优先队列/堆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;属于贪心的做法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;shadow-mapping&#34;&gt;Shadow Mapping&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;用光栅化做阴影&lt;/li&gt;
+&lt;li&gt;关键：不在阴影中的点必须被光源和摄像机同时看到&lt;/li&gt;
+&lt;li&gt;经典的方法只能处理点光源（硬阴影）&lt;/li&gt;
+&lt;li&gt;方法：
+&lt;ul&gt;
+&lt;li&gt;1：Render from light
+&lt;ul&gt;
+&lt;li&gt;记录 depth image&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2A：Render from eye
+&lt;ul&gt;
+&lt;li&gt;记录 standard image（with depth）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;2B：Project to light
+&lt;ul&gt;
+&lt;li&gt;把摄像机能看到的点 1 投影到光源看到的 depth image 上，得到点 2&lt;/li&gt;
+&lt;li&gt;比较点 1 和 点 2 到光源的深度是否一致&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;存在浮点数精度问题：改为大于，或者使用 bias&lt;/li&gt;
+&lt;li&gt;阴影贴图太少，会产生走样&lt;/li&gt;
+&lt;li&gt;硬阴影 VS 软阴影
+&lt;ul&gt;
+&lt;li&gt;光源有大小，才会产生软阴影&lt;/li&gt;
+&lt;li&gt;点光源只会产生硬阴影&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture11</title>
+        <link>https://5rLku.github.io/article/games101_lecture11/</link>
+        <pubDate>Tue, 21 Feb 2023 10:43:01 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture11/</guid>
+        <description>&lt;h1 id=&#34;geometry-2-curves-and-surfaces&#34;&gt;Geometry 2 (curves and surfaces)&lt;/h1&gt;
+&lt;h2 id=&#34;explicit&#34;&gt;Explicit&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Point cloud&lt;/li&gt;
+&lt;li&gt;Polygon mesh
+&lt;ul&gt;
+&lt;li&gt;.obj&lt;/li&gt;
+&lt;li&gt;顶点，法线，纹理坐标和他们的连接关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;curves&#34;&gt;Curves&lt;/h2&gt;
+&lt;h3 id=&#34;bezier-curves&#34;&gt;Bezier curves&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;三控制点（Quadratic Bezier）
+&lt;ul&gt;
+&lt;li&gt;两条线段插值 0-1 中 t 时刻的点&lt;/li&gt;
+&lt;li&gt;得到的两个点再连线，插值 t 时刻的点&lt;/li&gt;
+&lt;li&gt;该点为曲线上的点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;四控制点（Cubic Bezier）
+&lt;ul&gt;
+&lt;li&gt;同样的操作&lt;/li&gt;
+&lt;li&gt;直到插值到只有一个点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;代数公式
+&lt;ul&gt;
+&lt;li&gt;$$ b^n(t) = \sum^n_{j=0}b_jB^n_j(t) $$&lt;/li&gt;
+&lt;li&gt;Bernstein Polynomials：$$ B^n_i(t) = \begin{pmatrix} n \\  i \end{pmatrix} t^i(1-t)^{n-i}$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;性质
+&lt;ul&gt;
+&lt;li&gt;一定过起点和终点&lt;/li&gt;
+&lt;li&gt;cubic 特有？：出发时方向一定为第一条控制点线段，结束时一定为最后一条控制点线段&lt;/li&gt;
+&lt;li&gt;先对控制点应用仿射变换再得到曲线 和 先得到曲线再对曲线做仿射变换，没有区别&lt;/li&gt;
+&lt;li&gt;convex hull：曲线一定在控制点形成的凸包内&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;逐段 Piecewise
+&lt;ul&gt;
+&lt;li&gt;常用 cubic&lt;/li&gt;
+&lt;li&gt;连续性
+&lt;ul&gt;
+&lt;li&gt;C_0 连续（曲线连续）：第一段终点等于第二段的起点&lt;/li&gt;
+&lt;li&gt;C_1 连续（切线连续）：第一段终点等于第二段的起点等于前后控制点的中点&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;样条 Spline
+&lt;ul&gt;
+&lt;li&gt;可控的曲线&lt;/li&gt;
+&lt;li&gt;B-Spline：basis spline，有局部性&lt;/li&gt;
+&lt;li&gt;NURBS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;surfaces&#34;&gt;Surfaces&lt;/h2&gt;
+&lt;h3 id=&#34;bezier-surfaces&#34;&gt;Bezier surfaces&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Bicubic Bezier Surfaces：4x4 个控制点&lt;/li&gt;
+&lt;li&gt;类似双线性插值的做法&lt;/li&gt;
+&lt;li&gt;参数：（u，v）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;几何处理&#34;&gt;几何处理&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;mesh subdivision&lt;/li&gt;
+&lt;li&gt;mesh simplification&lt;/li&gt;
+&lt;li&gt;mesh regularization&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture10</title>
+        <link>https://5rLku.github.io/article/games101_lecture10/</link>
+        <pubDate>Tue, 21 Feb 2023 10:42:57 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture10/</guid>
+        <description>&lt;p&gt;#Geometry 1 (introduction)&lt;/p&gt;
+&lt;h2 id=&#34;纹理应用&#34;&gt;纹理应用&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;纹理 = 内存 + 范围查询（滤波）&lt;/li&gt;
+&lt;li&gt;Environment Map 环境光贴图
+&lt;ul&gt;
+&lt;li&gt;Utah teapot、Stanford bunny/dragon、Cornell box&lt;/li&gt;
+&lt;li&gt;认为光照无限远，没有位置信息，只记录方向&lt;/li&gt;
+&lt;li&gt;Spherical Environment Map，有扭曲的问题
+&lt;ul&gt;
+&lt;li&gt;Cube Map：从球出发，到包围盒的面上&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Bump/Normal Map 法线贴图
+&lt;ul&gt;
+&lt;li&gt;纹理定义高度/法线&lt;/li&gt;
+&lt;li&gt;高度 -&amp;gt; 法线的计算（flatland）：
+&lt;ul&gt;
+&lt;li&gt;原始法线（0， 1）&lt;/li&gt;
+&lt;li&gt;差分计算凹凸面的梯度 $d_p=c*h(u+1)-h(u)$，得到切线向量（1，dp）&lt;/li&gt;
+&lt;li&gt;切线向量逆时针旋转 90 度得到（-dp，1）&lt;/li&gt;
+&lt;li&gt;归一化得到法线&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;高度 -&amp;gt; 法线的计算（3D）：
+&lt;ul&gt;
+&lt;li&gt;原始法线（0，0，1）&lt;/li&gt;
+&lt;li&gt;计算梯度后旋转并归一化得到法线&lt;/li&gt;
+&lt;li&gt;在局部坐标下计算&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Displacement Map 位移贴图
+&lt;ul&gt;
+&lt;li&gt;会真正的修改三角形的顶点&lt;/li&gt;
+&lt;li&gt;要求模型够精细，频率要比纹理高&lt;/li&gt;
+&lt;li&gt;DX 有动态曲面细分，可以根据需要来做细分&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3D Procedural Noise + Solid Modeling
+&lt;ul&gt;
+&lt;li&gt;Perlin noise&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;提供预计算的结果
+&lt;ul&gt;
+&lt;li&gt;Ambient Occlusion 环境光遮蔽&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;3D Texture &amp;amp; Volume Rendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;introduction-to-geometry&#34;&gt;Introduction to Geometry&lt;/h2&gt;
+&lt;h3 id=&#34;implicit&#34;&gt;Implicit&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;满足特定关系&lt;/li&gt;
+&lt;li&gt;f（x，y，z）= 0&lt;/li&gt;
+&lt;li&gt;具体有哪些点？&amp;mdash;- 困难&lt;/li&gt;
+&lt;li&gt;判断是否满足/在内外 &amp;mdash;- 简单&lt;/li&gt;
+&lt;li&gt;类型：
+&lt;ul&gt;
+&lt;li&gt;Algebraic Surface&lt;/li&gt;
+&lt;li&gt;Constructive Solid Geometry（CSG）
+&lt;ul&gt;
+&lt;li&gt;使用 bool 运算&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Distance Function
+&lt;ul&gt;
+&lt;li&gt;空间中任意一点到想表示的几何体的最小距离（可以正负，有向）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Level Set
+&lt;ul&gt;
+&lt;li&gt;Medical Data（CT，MRI）&lt;/li&gt;
+&lt;li&gt;Physical Simulation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Fractals&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;好处：
+&lt;ul&gt;
+&lt;li&gt;描述稳定&lt;/li&gt;
+&lt;li&gt;查询简单（内外，距离）&lt;/li&gt;
+&lt;li&gt;计算光线和平面相交方便&lt;/li&gt;
+&lt;li&gt;不会走样&lt;/li&gt;
+&lt;li&gt;很好处理变化（流体）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;坏处：
+&lt;ul&gt;
+&lt;li&gt;复杂物体难建模&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;explicit&#34;&gt;Explicit&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;直接给定或者 parameter mapping 给定&lt;/li&gt;
+&lt;li&gt;具体有哪些点？&amp;mdash;- 简单&lt;/li&gt;
+&lt;li&gt;判断在内外 &amp;mdash;- 困难&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture09</title>
+        <link>https://5rLku.github.io/article/games101_lecture09/</link>
+        <pubDate>Tue, 21 Feb 2023 10:42:52 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture09/</guid>
+        <description>&lt;h1 id=&#34;shading-3-texture-mapping-cont&#34;&gt;Shading 3 (Texture Mapping cont.)&lt;/h1&gt;
+&lt;h2 id=&#34;barycentric-coordinates&#34;&gt;Barycentric Coordinates&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;在顶点声明属性，在三角形内部平滑插值&lt;/li&gt;
+&lt;li&gt;纹理坐标、颜色、法线等&lt;/li&gt;
+&lt;li&gt;三角形所在平面上任意一点都可以用三角形三个顶点坐标的线性组合表示，且系数和为 1 （不为 1 则该点不在平面内）&lt;/li&gt;
+&lt;li&gt;把系数看成坐标，得到重心坐标&lt;/li&gt;
+&lt;li&gt;当点在三角形内部的时候，重心坐标值均为正数&lt;/li&gt;
+&lt;li&gt;重心坐标可以由面积比求出（该点对面的小三角形面积 / 大三角形面积）&lt;/li&gt;
+&lt;li&gt;三角形重心：坐标为 (1/3, 1/3, 1/3)&lt;/li&gt;
+&lt;li&gt;也有不用面积的一般表示的公式&lt;/li&gt;
+&lt;li&gt;插值时根据坐标来线性插值属性&lt;/li&gt;
+&lt;li&gt;投影变换下不能保证重心坐标不变（必须在三维空间做插值，不能在投影后的空间中）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;应用纹理&#34;&gt;应用纹理&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;根据每个像素对应的 (u, v) 去纹理中采样&lt;/li&gt;
+&lt;li&gt;采样得到的颜色通常设置为 diffuse albedo $K_d$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;texture-magnification-纹理放大&#34;&gt;Texture Magnification 纹理放大&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;纹理太小，分辨率太低，一定范围内的 pixel 都映射到同一个 texel
+&lt;ul&gt;
+&lt;li&gt;插值：
+&lt;ul&gt;
+&lt;li&gt;nearest：找最近的整数&lt;/li&gt;
+&lt;li&gt;bilinear：在包含该 texel 最小的整数矩形（四个）中在 x，y 坐标上做两方向的一共三次线性插值（2 + 1）&lt;/li&gt;
+&lt;li&gt;bicubic：在最近的十六个，每次用四个做三次方的插值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;纹理太大，会有 moire 轮和锯齿，产生走样
+&lt;ul&gt;
+&lt;li&gt;近处，屏幕上的像素覆盖的纹理区域较小，远处较大（远处的一个像素包含更大范围的物体）&lt;/li&gt;
+&lt;li&gt;不能用一个像素中心点去近似整片大区域&lt;/li&gt;
+&lt;li&gt;超采样可以处理，但代价大&lt;/li&gt;
+&lt;li&gt;采样引起问题，那就避免采样&lt;/li&gt;
+&lt;li&gt;Mipmap：允许做（快速、近似、正方形）范围查询
+&lt;ul&gt;
+&lt;li&gt;每多加一个 Level，边长变为一半&lt;/li&gt;
+&lt;li&gt;存储量为原本的 4/3（只多 1/3 的存储量）&lt;/li&gt;
+&lt;li&gt;计算 Level：先求出像素在纹理上的近似的正方形范围，然后对正方形边长做 log2（在哪个级别的纹理上该区域会变成一个 texel 的大小）&lt;/li&gt;
+&lt;li&gt;相邻像素的 Level 不连续（Level 不为整数时，直接 nearest 导致）：插值，trilinear（相邻的两个 Level 上先做双线性插值，然后两个 Level 再做线性）&lt;/li&gt;
+&lt;li&gt;有可能出现 overblur：部分解决，Anisotropic Filtering，各向异性过滤
+&lt;ul&gt;
+&lt;li&gt;Mipmap 只有正方形图&lt;/li&gt;
+&lt;li&gt;Anisotropic Filtering 提供长宽不相同的矩形图&lt;/li&gt;
+&lt;li&gt;极限代价为原本的三倍&lt;/li&gt;
+&lt;li&gt;2X，4X，8X，16X：多生成对应级别的图&lt;/li&gt;
+&lt;li&gt;无法解决斜的区域，EWA filtering：用多个圆形组成区域&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture08</title>
+        <link>https://5rLku.github.io/article/games101_lecture08/</link>
+        <pubDate>Tue, 21 Feb 2023 10:42:47 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture08/</guid>
+        <description>&lt;h1 id=&#34;shading-2-shading-pipeline-and-texture-mapping&#34;&gt;Shading 2 (Shading, Pipeline and Texture Mapping)&lt;/h1&gt;
+&lt;h2 id=&#34;着色&#34;&gt;着色&lt;/h2&gt;
+&lt;h3 id=&#34;blinn-phong&#34;&gt;Blinn-Phong&lt;/h3&gt;
+&lt;h4 id=&#34;specular&#34;&gt;Specular&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;强度取决于观察方向 $\textbf v$，镜面反射方向最亮&lt;/li&gt;
+&lt;li&gt;当 $\textbf v$ 和镜面方向越近，等价于半程向量 (half vector) $\textbf h$ 越接近于法向量 $\textbf n$&lt;/li&gt;
+&lt;li&gt;$$\mathbf h = {\mathbf v + \mathbf l \over ||\mathbf v + \mathbf l||}$$&lt;/li&gt;
+&lt;li&gt;$$L_s = k_s(I/r^2)max(0, \mathbf n \cdot \mathbf h)^p$$&lt;/li&gt;
+&lt;li&gt;用 $\textbf l$ 和 $\textbf v$ 来衡量则为 Phong 模型&lt;/li&gt;
+&lt;li&gt;$p$ 指数用来使得高光更加集中（考虑余弦函数的 n 次方），Blinn-Phong 一般为 100-200&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;ambient&#34;&gt;Ambient&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;不取决于任何因素&lt;/li&gt;
+&lt;li&gt;看成一个常数级别的颜色值&lt;/li&gt;
+&lt;li&gt;$$ L_a = k_aI_a $$&lt;/li&gt;
+&lt;li&gt;是一个近似假设&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;blinn-phong-反射模型&#34;&gt;Blinn-Phong 反射模型&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;$$L =  L_a + L_d + L_s $$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;着色频率&#34;&gt;着色频率&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Flat Shading：每个三角形平面着色，面法线&lt;/li&gt;
+&lt;li&gt;Gouraud Shading：每个顶点着色，顶点法线，三角形内部使用插值&lt;/li&gt;
+&lt;li&gt;Phong Shading：每个像素着色，像素法线&lt;/li&gt;
+&lt;li&gt;法线计算
+&lt;ul&gt;
+&lt;li&gt;顶点法线：顶点所在的所有三角形的面法线的平均值（简单/加权）&lt;/li&gt;
+&lt;li&gt;像素法线：顶点法线的重心插值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;graphics-real-time-rendering-pipeline&#34;&gt;Graphics (Real-time Rendering) Pipeline&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;应用 &amp;mdash; 顶点处理 &amp;mdash; 三角形处理 &amp;mdash; 光栅化 &amp;mdash; 片元处理 &amp;mdash; 帧缓冲操作 &amp;mdash; 展示&lt;/li&gt;
+&lt;li&gt;现代管线可以自定义 Shader&lt;/li&gt;
+&lt;li&gt;Vertex Shader，Fragment Shader&lt;/li&gt;
+&lt;li&gt;Shadertoy 网站&lt;/li&gt;
+&lt;li&gt;GPU：管线硬件实现&lt;/li&gt;
+&lt;li&gt;Geometry Shader，Compute Shader&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;纹理映射&#34;&gt;纹理映射&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;纹理是 2D 图像&lt;/li&gt;
+&lt;li&gt;映射指把纹理贴到 3D 物体上&lt;/li&gt;
+&lt;li&gt;纹理坐标 (u, v)，范围 0-1&lt;/li&gt;
+&lt;li&gt;纹理无缝衔接：tiled&lt;/li&gt;
+&lt;li&gt;三角形内部插值：重心坐标 Barycentric Coordinate&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture07</title>
+        <link>https://5rLku.github.io/article/games101_lecture07/</link>
+        <pubDate>Tue, 21 Feb 2023 10:42:28 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture07/</guid>
+        <description>&lt;h1 id=&#34;shading-1-illumination-shading-and-graphics-pipeline&#34;&gt;Shading 1 (Illumination, Shading and Graphics Pipeline)&lt;/h1&gt;
+&lt;h2 id=&#34;可见性遮挡&#34;&gt;可见性/遮挡&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;画家算法：先画离镜头远的物体，再画离镜头近的去遮挡远的物体&lt;/li&gt;
+&lt;li&gt;需要根据物体的深度排序&lt;/li&gt;
+&lt;li&gt;存在不可解的深度排序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;z-buffering&#34;&gt;Z-Buffering&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;对每个像素记录最近的深度（z-value）&lt;/li&gt;
+&lt;li&gt;这里简化计算，假设 z 小离屏幕近&lt;/li&gt;
+&lt;li&gt;算法
+&lt;ul&gt;
+&lt;li&gt;for 每个三角形
+&lt;ul&gt;
+&lt;li&gt;for 每个像素
+&lt;ul&gt;
+&lt;li&gt;if 新的 z 小于 z-buffer 中的 z
+&lt;ul&gt;
+&lt;li&gt;更新 framebuffer 颜色&lt;/li&gt;
+&lt;li&gt;更新 z-buffer 值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;复杂度：O(n)，假设每个三角形有常数个像素&lt;/li&gt;
+&lt;li&gt;与绘制顺序无关&lt;/li&gt;
+&lt;li&gt;考虑 MSAA，可能需要对每一个采样点（子像素）运用 z-buffering&lt;/li&gt;
+&lt;li&gt;z-buffer 无法处理透明物体&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;着色&#34;&gt;着色&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;给物体赋予明暗和颜色&lt;/li&gt;
+&lt;li&gt;课程定义为：给物体应用材质 Material&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;blinn-phong&#34;&gt;Blinn-Phong&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;直接光照：镜面光 Specular，漫反射 Diffuse&lt;/li&gt;
+&lt;li&gt;简介光照：环境光 Ambient&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;shading-point&#34;&gt;Shading Point&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;从平面上的一个 shading point 出发有&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;平面法线 $\textbf n$&lt;/li&gt;
+&lt;li&gt;观察方向 $\textbf v$&lt;/li&gt;
+&lt;li&gt;光照方向 $\textbf l$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;平面的参数：color，shininess 等&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;着色有局部性，只考虑自己&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;diffuse&#34;&gt;Diffuse&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;考虑单位面积接收到多少能量，和 $\textbf l$ 与 $\textbf n$ 的夹角的余弦成正比&lt;/li&gt;
+&lt;li&gt;考虑点光源发射的能量，分布在球壳上，$Intensity = I/r^2$&lt;/li&gt;
+&lt;li&gt;Lambert Shading: $$L_d = k_d(I/r^2)max(0,\mathbf n \cdot \mathbf l)$$&lt;/li&gt;
+&lt;li&gt;系数 $k_d$ 反应不同波长的光和表面对光的吸收情况&lt;/li&gt;
+&lt;li&gt;漫反射与观察方向无关&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture06</title>
+        <link>https://5rLku.github.io/article/games101_lecture06/</link>
+        <pubDate>Mon, 20 Feb 2023 15:42:43 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture06/</guid>
+        <description>&lt;h1 id=&#34;rasterization-2-antialiasing-and-z-buffering&#34;&gt;Rasterization 2 (Antialiasing and Z-Buffering)&lt;/h1&gt;
+&lt;h2 id=&#34;走样&#34;&gt;走样&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;走样原因：信号变化太快，采样速度跟不上&lt;/li&gt;
+&lt;li&gt;方法：blur/filter 后 再采样&lt;/li&gt;
+&lt;li&gt;不能先采样再 blur/filter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;频域&#34;&gt;频域&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;傅里叶级数展开：任何函数都可以写成正弦和余弦函数的线性组合 + 常数项&lt;/li&gt;
+&lt;li&gt;傅里叶变换：把时域函数转换为频域函数&lt;/li&gt;
+&lt;li&gt;高频率的函数需要更快的采样&lt;/li&gt;
+&lt;li&gt;走样：同样的采样方法采样两个频率不同的函数，得到的结果无法分开&lt;/li&gt;
+&lt;li&gt;滤波可以删掉特定的频率内容&lt;/li&gt;
+&lt;li&gt;滤波 = 卷积 = 平均&lt;/li&gt;
+&lt;li&gt;时域上的卷积 = 频域上的乘积，时域上的乘积 = 频域上的卷积&lt;/li&gt;
+&lt;li&gt;采样 = 重复频域上的内容&lt;/li&gt;
+&lt;li&gt;走样 = 复制粘贴频谱时离得不够开，产生了重叠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;减少走样&#34;&gt;减少走样&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;方法1：增加采样率&lt;/li&gt;
+&lt;li&gt;方法2：反走样（去掉容易重叠的高频率部分后采样）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;反走样&#34;&gt;反走样&lt;/h2&gt;
+&lt;h3 id=&#34;multisample-antialiasingmsaa&#34;&gt;MultiSample Antialiasing（MSAA）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;没有真正提高分辨率&lt;/li&gt;
+&lt;li&gt;通过把一个像素划分为一些子像素，算得子像素在三角形内部的覆盖率（类似于做模糊操作）&lt;/li&gt;
+&lt;li&gt;根据覆盖率计算该像素的颜色（采样）&lt;/li&gt;
+&lt;li&gt;代价：增大计算量&lt;/li&gt;
+&lt;li&gt;工业上不一定规则划分子像素&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;fast-approximate-aafxaa&#34;&gt;Fast Approximate AA（FXAA）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;做图像的后期处理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;temporal-aataa&#34;&gt;Temporal AA（TAA）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;考虑上一帧的信息进行复用&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;super-sampling&#34;&gt;Super sampling&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Deep Learning Super Sampling（DLSS）&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture05</title>
+        <link>https://5rLku.github.io/article/games101_lecture05/</link>
+        <pubDate>Mon, 20 Feb 2023 15:42:39 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture05/</guid>
+        <description>&lt;h1 id=&#34;rasterization-1-triangles&#34;&gt;Rasterization 1 (Triangles)&lt;/h1&gt;
+&lt;h2 id=&#34;透视投影&#34;&gt;透视投影&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;field-of-view： frustum 两侧边中点和摄像机的连线夹角（？虎书看着是到近平面）&lt;/li&gt;
+&lt;li&gt;aspect ratio：宽高比&lt;/li&gt;
+&lt;li&gt;定义这两个等效于定义 l，r，b，t&lt;/li&gt;
+&lt;li&gt;理解：定义 n 和 fovY，可算出 b，t，通过 aspect ratio 可算出 l，r&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;viewport&#34;&gt;Viewport&lt;/h2&gt;
+&lt;h3 id=&#34;屏幕&#34;&gt;屏幕&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;像素：红蓝绿混合的小方块&lt;/li&gt;
+&lt;li&gt;屏幕空间：左下角原点，向右向上延伸&lt;/li&gt;
+&lt;li&gt;约定：像素坐标范围 (0, 0) - (width - 1, height - 1)，像素中心为 (x + 0.5, y + 0.5)，屏幕范围 (0, 0) - (width, height)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;视口变换&#34;&gt;视口变换&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;canonical cube $[-1,1]^2$到 screen $[0,width]\times[0,height]$&lt;/li&gt;
+&lt;li&gt;矩阵：先缩放，再平移&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;光栅化&#34;&gt;光栅化&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;三角形图元好处
+&lt;ul&gt;
+&lt;li&gt;一定是平面&lt;/li&gt;
+&lt;li&gt;内外好判断&lt;/li&gt;
+&lt;li&gt;内部好插值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;判断像素（中心点）和三角形的位置关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;采样&#34;&gt;采样&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;把函数离散化的过程&lt;/li&gt;
+&lt;li&gt;像素中心点在三角形内部，则像素 = 1，否则 = 0&lt;/li&gt;
+&lt;li&gt;判断点是否在内部
+&lt;ul&gt;
+&lt;li&gt;先决定三角形顶点顺序（顺/逆时针）&lt;/li&gt;
+&lt;li&gt;依次把三条边和点进行三次叉乘（$P_0P_1 \times P_0Q$，类推）&lt;/li&gt;
+&lt;li&gt;若三次正负均相等，则在内部，否则在外部&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;点落在边上，要么不处理（这门课），要么特殊处理（OpenGL，DX）&lt;/li&gt;
+&lt;li&gt;加速：轴向包围盒（axis-aligned bounding box，AABB），只扫描包围盒内的像素&lt;/li&gt;
+&lt;li&gt;加速：每行记录最左最右，只扫描这些像素&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture04</title>
+        <link>https://5rLku.github.io/article/games101_lecture04/</link>
+        <pubDate>Sat, 18 Feb 2023 19:56:20 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture04/</guid>
+        <description>&lt;h1 id=&#34;transformation-cont&#34;&gt;Transformation Cont.&lt;/h1&gt;
+&lt;h2 id=&#34;上节课补充&#34;&gt;上节课补充&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;旋转 $-\theta$ 的旋转矩阵 = 旋转 $\theta$ 的旋转矩阵的转置和逆&lt;/li&gt;
+&lt;li&gt;矩阵的转置 = 矩阵的逆，矩阵为正交矩阵&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;三维变换&#34;&gt;三维变换&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;绕轴旋转：轴对应的坐标不变，在另两个轴组成的平面上旋转（矩阵上能体现）[绕 y 轴有点不一样，取的是 $-\theta$，因为逆时针为 z &amp;ndash;&amp;gt; x]&lt;/li&gt;
+&lt;li&gt;组合旋转：拆分为绕轴旋转的组合，欧拉角，raw、pitch、yaw&lt;/li&gt;
+&lt;li&gt;Rodrigue&amp;rsquo;s Rotation Formula：绕任意轴 n 旋转 a 角&lt;/li&gt;
+&lt;li&gt;四元数：主要解决旋转插值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;view&#34;&gt;View&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;model - view - projection = 放物体 - 放相机 - 拍照&lt;/li&gt;
+&lt;li&gt;定义相机
+&lt;ul&gt;
+&lt;li&gt;Position&lt;/li&gt;
+&lt;li&gt;Look-at&lt;/li&gt;
+&lt;li&gt;Up direction&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;关键概念
+&lt;ul&gt;
+&lt;li&gt;固定物体移动相机等效于固定相机移动物体&lt;/li&gt;
+&lt;li&gt;固定相机 Position 在原点，Look-at 到 -z，Up direction 为 y&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;操作
+&lt;ul&gt;
+&lt;li&gt;移动相机到原点&lt;/li&gt;
+&lt;li&gt;旋转相机 Look-at 到 -z，Up direction 到 y&lt;/li&gt;
+&lt;li&gt;-z 旋转到 Look-at，y 旋转到 Up direction 更好求，求出来再取逆（类似之前的取特殊点法，注意旋转矩阵为正交矩阵）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;projection&#34;&gt;Projection&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;正交和透视投影（是否近大远小）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;正交投影&#34;&gt;正交投影&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;直观操作
+&lt;ul&gt;
+&lt;li&gt;相机摆放到标准位置&lt;/li&gt;
+&lt;li&gt;丢掉 z 坐标&lt;/li&gt;
+&lt;li&gt;x，y 都平移且缩放到 [-1, 1]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;把 cuboid $[l, r] \times [b, t] \times [f, n]$ （near &amp;gt; far 因为 -z，OpenGL 则用左手系去避免这一点）映射到 canonical cube $[-1, 1]^3$&lt;/li&gt;
+&lt;li&gt;实际操作
+&lt;ul&gt;
+&lt;li&gt;平移 cuboid 到原点&lt;/li&gt;
+&lt;li&gt;缩放到 canonical cube 大小&lt;/li&gt;
+&lt;li&gt;矩阵：先每组边中点平移到 0，再每组边长缩放到 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;透视投影&#34;&gt;透视投影&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;透视近大远小是因为 frustum 远平面大，近平面小，两者上面的点需要一一进行对应，相同长度的线在远平面上会被对应为更短的线（相同长度的近平面的线保持不变）&lt;/li&gt;
+&lt;li&gt;操作
+&lt;ul&gt;
+&lt;li&gt;把 frustum 挤压成 cuboid&lt;/li&gt;
+&lt;li&gt;做正交投影&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;规定：近平面大小不变，挤压时远平面 z 不发生改变，远平面中心点不变&lt;/li&gt;
+&lt;li&gt;计算
+&lt;ul&gt;
+&lt;li&gt;由相似三角形得到 $y\prime = {n\over z} y，x\prime = {n\over z} x$&lt;/li&gt;
+&lt;li&gt;$ M^{(4\times4)}_{persp\to ortho}\begin{pmatrix} x \\ y \\ z \\ 1 \end{pmatrix}=\begin{pmatrix} {n\over z}x \\ {n\over z}y \\ ? \\ 1 \end{pmatrix}=\begin{pmatrix} nx \\ ny \\ ? \\ z \end{pmatrix}$&lt;/li&gt;
+&lt;li&gt;$ M^{(4\times4)}_{persp\to ortho}=\begin{pmatrix} n &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; n &amp;amp; 0 &amp;amp; 0\\ ? &amp;amp; ? &amp;amp; ? &amp;amp; ?\\ 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 0\end{pmatrix} $&lt;/li&gt;
+&lt;li&gt;观察：近平面上所有点都不变
+&lt;ul&gt;
+&lt;li&gt;$ M^{(4\times4)}_{persp\to ortho}\begin{pmatrix} x \\ y \\ n \\ 1 \end{pmatrix}=\begin{pmatrix} x \\ y \\ n \\ 1 \end{pmatrix}=\begin{pmatrix} nx \\ ny \\ n^2 \\ n \end{pmatrix} $&lt;/li&gt;
+&lt;li&gt;一定为 $ \begin{pmatrix} 0 &amp;amp; 0 &amp;amp; A &amp;amp; B \end{pmatrix}\begin{pmatrix} x \\ y \\ n \\ 1 \end{pmatrix} = n^2 $&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;观察：远平面上所有点的 z 都不变（中心点也一样）
+&lt;ul&gt;
+&lt;li&gt;$ M^{(4\times4)}_{persp\to ortho}\begin{pmatrix} 0 \\ 0 \\ f \\ 1 \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ f \\ 1 \end{pmatrix}=\begin{pmatrix} 0 \\ 0 \\ f^2 \\ f \end{pmatrix} $&lt;/li&gt;
+&lt;li&gt;有 $ \begin{pmatrix} 0 &amp;amp; 0 &amp;amp; A &amp;amp; B \end{pmatrix}\begin{pmatrix} 0 \\ 0 \\ f \\ 1 \end{pmatrix} = f^2 $&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;$ \begin{cases} An+B=n^2 \\ Af+B=f^2 \end{cases} \to \begin{cases} A=n+f \\ B=-nf \end{cases} $&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>GAMES101_Lecture03</title>
+        <link>https://5rLku.github.io/article/games101_lecture03/</link>
+        <pubDate>Sat, 18 Feb 2023 19:56:16 +0800</pubDate>
+        
+        <guid>https://5rLku.github.io/article/games101_lecture03/</guid>
+        <description>&lt;h1 id=&#34;transformation&#34;&gt;Transformation&lt;/h1&gt;
+&lt;h2 id=&#34;model&#34;&gt;Model&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;平移，旋转，缩放&lt;/li&gt;
+&lt;li&gt;线性变换 = 矩阵&lt;/li&gt;
+&lt;li&gt;可以用特殊点推导出变换矩阵&lt;/li&gt;
+&lt;li&gt;齐次坐标
+&lt;ul&gt;
+&lt;li&gt;平移无法写成矩阵形式&lt;/li&gt;
+&lt;li&gt;目的：为了使用统一的变换表达方式&lt;/li&gt;
+&lt;li&gt;添加一个维度 w，w = 0 为向量，w = 1 为点&lt;/li&gt;
+&lt;li&gt;vec + vec = vec (0 + 0 = 0)，pts - pts = vec (1 - 1 = 0)&lt;/li&gt;
+&lt;li&gt;pts + vec = pts (1 + 0 = 1)，pts + pts = 中点 (1 + 1 = 2)  [ pts: (x, y, w) = (x/w, y/w, 1) ]&lt;/li&gt;
+&lt;li&gt;仿射变换 = 线性变换 + 平移，齐次坐标下转换为矩阵形式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;逆变换：乘以逆矩阵&lt;/li&gt;
+&lt;li&gt;变换组合
+&lt;ul&gt;
+&lt;li&gt;复杂变换可以组合&lt;/li&gt;
+&lt;li&gt;变换顺序重要（矩阵乘法不满足交换律）&lt;/li&gt;
+&lt;li&gt;矩阵连乘时从右到左依次应用到点/向量上&lt;/li&gt;
+&lt;li&gt;连续变换可以提前相乘为一个变换矩阵（矩阵乘法满足结合律）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;变换分解
+&lt;ul&gt;
+&lt;li&gt;绕特定点旋转 = 把特定点平移到原点 + 绕原点旋转 + 平移回去&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;三维变换
+&lt;ul&gt;
+&lt;li&gt;齐次为 4x4 矩阵&lt;/li&gt;
+&lt;li&gt;仿射变换矩阵最后一行 0 0 0 1，最后一列为 平移量，左上角为线性变换矩阵&lt;/li&gt;
+&lt;li&gt;先线性变换，再平移&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>GAMES101_Lecture02</title>
         <link>https://5rLku.github.io/article/games101_lecture02/</link>
         <pubDate>Wed, 15 Feb 2023 11:24:41 +0800</pubDate>
         
         <guid>https://5rLku.github.io/article/games101_lecture02/</guid>
-        <description></description>
+        <description>&lt;h1 id=&#34;review-of-linear-algebra&#34;&gt;Review of Linear Algebra&lt;/h1&gt;
+&lt;h2 id=&#34;向量&#34;&gt;向量&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;起点和终点&lt;/li&gt;
+&lt;li&gt;方向和长度&lt;/li&gt;
+&lt;li&gt;无位置信息&lt;/li&gt;
+&lt;li&gt;单位向量：向量 / 向量长度，代表方向&lt;/li&gt;
+&lt;li&gt;默认为列向量&lt;/li&gt;
+&lt;li&gt;向量加法：几何上首尾相连，代数上坐标相加&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;向量点乘&#34;&gt;向量点乘&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;$\vec{a} \dot{} \vec{b} =  | \vec{a}   |  | \vec{b}  |  \cos \theta  $&lt;/li&gt;
+&lt;li&gt;满足交换律、分配律、结合律&lt;/li&gt;
+&lt;li&gt;对应坐标相乘后相加，是一个数&lt;/li&gt;
+&lt;li&gt;应用：找两向量夹角，找一个向量到另一个向量的投影&lt;/li&gt;
+&lt;li&gt;应用：衡量两个向量的接近程度，分解向量，决定前向/后向（点乘的正负）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;向量叉乘&#34;&gt;向量叉乘&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;产生同时垂直于两个向量的第三个向量&lt;/li&gt;
+&lt;li&gt;$ \vec{a} \times  \vec{b} =  -\vec{b} \times  \vec{a} $&lt;/li&gt;
+&lt;li&gt;长度： $|\vec{a}\times\vec{b} | =  |\vec{a}||\vec{b}|\sin \theta $，方向：右手定则&lt;/li&gt;
+&lt;li&gt;叉乘自己 = 0&lt;/li&gt;
+&lt;li&gt;满足分配律、结合律&lt;/li&gt;
+&lt;li&gt;应用：决定左/右，正在左，负在右&lt;/li&gt;
+&lt;li&gt;应用：决定内/外，点都在三条边的同一侧则点在三角形内部（结果为 0 判断为内外都行）&lt;/li&gt;
+&lt;li&gt;应用：建立直角坐标系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;矩阵&#34;&gt;矩阵&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;数字的数组&lt;/li&gt;
+&lt;li&gt;加/乘一个数：每个元素都加/乘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;矩阵乘法&#34;&gt;矩阵乘法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A（M，N）X  B（N，P）=  C（M，P）&lt;/li&gt;
+&lt;li&gt;C（i，j）=  A（row i）和  B（col j） 的点乘结果&lt;/li&gt;
+&lt;li&gt;没有交换律&lt;/li&gt;
+&lt;li&gt;满足结合律、分配律&lt;/li&gt;
+&lt;li&gt;向量看为（m x 1）的矩阵&lt;/li&gt;
+&lt;li&gt;能用来变换点的坐标&lt;/li&gt;
+&lt;li&gt;转置：行列互换&lt;/li&gt;
+&lt;li&gt;$ (AB)^T = B^TA^T $&lt;/li&gt;
+&lt;li&gt;单位矩阵 $ I $：对角线为 1，其他全为 0&lt;/li&gt;
+&lt;li&gt;$ AA^{-1} = A^{-1}A = I $&lt;/li&gt;
+&lt;li&gt;$ (AB)^{-1} = B^{-1}A^{-1}$&lt;/li&gt;
+&lt;li&gt;向量点乘叉乘可以转换为矩阵乘法（点乘：转置，叉乘：dual matrix）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;作业0&#34;&gt;作业0&lt;/h2&gt;
+</description>
         </item>
         <item>
         <title>GAMES101_Lecture01</title>
@@ -20,7 +2786,8 @@
         <pubDate>Mon, 05 Sep 2022 21:41:48 +0800</pubDate>
         
         <guid>https://5rLku.github.io/article/games101_lecture01/</guid>
-        <description>&lt;h2 id=&#34;什么是图形学&#34;&gt;什么是图形学&lt;/h2&gt;
+        <description>&lt;h1 id=&#34;overview-of-computer-graphics&#34;&gt;Overview of Computer Graphics&lt;/h1&gt;
+&lt;h2 id=&#34;什么是图形学&#34;&gt;什么是图形学&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;用计算机来合成和操作视觉信息&lt;/li&gt;
 &lt;/ul&gt;

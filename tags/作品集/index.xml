@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>作品集 on 5rLku</title>
+    <link>https://5rLku.github.io/tags/%E4%BD%9C%E5%93%81%E9%9B%86/</link>
+    <description>Recent content in 作品集 on 5rLku</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 Mar 2023 13:21:23 +0800</lastBuildDate><atom:link href="https://5rLku.github.io/tags/%E4%BD%9C%E5%93%81%E9%9B%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Portfolio</title>
+      <link>https://5rLku.github.io/article/portfolio/</link>
+      <pubDate>Fri, 10 Mar 2023 13:21:23 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/portfolio/</guid>
+      <description>技术美术作品集 Curl-noise 速度场流体 OpenGL .video-shortcode {position: relative;	max-width: 90%;height: auto;}There should have been a video here but your browser does not seemto support it.curl-noise 噪声速度场 .video-shortcode {position: relative;	max-width: 90%;height: auto;}There should have been a video here but your browser does not seemto support it.curl-noise 障碍球速度场  Perlin Noise 生成 curl-noise  复现论文《Curl-Noise for Procedural Fluid Flow》 对噪声场求其旋度场，该旋度场的散度处处为 0 ，可以模拟流体粒子的流动 对旋度场调制，生成含障碍物的速度场    Houdini .</description>
+    </item>
+    
+  </channel>
+</rss>

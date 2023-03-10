@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='百人计划_图形查漏笔记'><title>TA_100_Graphics</title>
+
+<link rel='canonical' href='https://5rLku.github.io/article/ta_100_graphics/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='TA_100_Graphics'>
+<meta property='og:description' content='百人计划_图形查漏笔记'>
+<meta property='og:url' content='https://5rLku.github.io/article/ta_100_graphics/'>
+<meta property='og:site_name' content='5rLku'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='技术美术' /><meta property='article:tag' content='百人计划' /><meta property='article:tag' content='课程笔记' /><meta property='article:published_time' content='2023-03-02T22:08:44&#43;08:00'/><meta property='article:modified_time' content='2023-03-02T22:08:44&#43;08:00'/>
+<meta name="twitter:title" content="TA_100_Graphics">
+<meta name="twitter:description" content="百人计划_图形查漏笔记">
+    <link rel="shortcut icon" href="image/favicon.ico" />
+<style>
+    :root {
+        --article-font-family: "Noto Serif SC", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+    </head>
+    <body class="">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.body.dataset.scheme = 'dark';
+        } else {
+            document.body.dataset.scheme = 'light';
+        }
+    })();
+</script><div class="container main-container flex on-phone--column extended article-page with-toolbar">
+            <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu2a10fa429deb4abe862cc42cef778dcc_17900_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://5rLku.github.io">5rLku</a></h1>
+        <h2 class="site-description">还是写下来印象才深刻</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>暗色模式</span>
+            </li>
+        
+    </ol>
+</aside>
+
+            <main class="main full-width">
+    <div id="article-toolbar">
+        <a href="https://5rLku.github.io" class="back-home">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+            <span>Back</span>
+        </a>
+    </div>
+
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" >
+                技术
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/article/ta_100_graphics/">TA_100_Graphics</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        百人计划_图形查漏笔记
+    </h3>
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Mar 02, 2023</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <h1 id="百人计划_图形查漏笔记">百人计划_图形查漏笔记</h1>
+<h2 id="11-渲染流水线">1.1 渲染流水线</h2>
+<ul>
+<li>应用阶段
+<ul>
+<li>粗粒度剔除：直接剔除视锥体外的物体</li>
+</ul>
+</li>
+<li>几何阶段
+<ul>
+<li>顶点 shader &mdash; 几何 shader &mdash; 曲面细分 shader &mdash; 投影 &mdash; 裁剪 &mdash; 屏幕映射</li>
+<li>几何 shader：图元着色 或者 基于图元产生新图元</li>
+<li>裁剪：
+<ul>
+<li>视锥体裁剪：剔除视锥体外的顶点，在边界上产生新顶点</li>
+<li>正面背面的 culling：根据三角形顶点的顺逆时针决定正背面，选择是否渲染正背面</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>光栅化
+<ul>
+<li>三角形设置 &mdash; 三角形遍历 &mdash; 片元shader &mdash; 逐片元操作</li>
+<li>抗锯齿：
+<ul>
+<li>SSAA 在光栅化前扩大 buffer，光栅化后下采样</li>
+<li>MSAA 在光栅化时建立子像素，根据覆盖率决定像素颜色</li>
+<li>FXAA/TXAA 属于图像操作，后处理</li>
+</ul>
+</li>
+<li>逐片元操作
+<ul>
+<li>决定最终像素</li>
+<li>OpenGL 顺序：
+<ul>
+<li>scissor test：自定义的不绘制区域</li>
+<li>alpha test</li>
+<li>stencil test</li>
+<li>depth test</li>
+<li>blend</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="13-纹理的秘密">1.3 纹理的秘密</h2>
+<ul>
+<li>GPU 中像素 2x2 一组处理，算 ddx，ddy 和 法线</li>
+<li>Summed - Area Table：最右下角的值是到从自己到左上角的大矩形的值的和，可以通过加减算出任意矩形区域均值</li>
+<li>Unity/UE4 各向异性过滤
+<ul>
+<li>不用 Ripmap</li>
+<li>重用 Mipmap</li>
+<li>像素对应纹理空间中区域的最小边算 level，最大边方向沿中心点采样</li>
+<li>2X，4X，8X，16X 决定采样次数（16X &mdash; 采128次？）</li>
+<li>不一定按照最大次数来采，会根据区域情况决定</li>
+</ul>
+</li>
+<li>优化：
+<ul>
+<li>Draw Call，CPU
+<ul>
+<li>纹理图集，纹理数组</li>
+<li>避免每次 draw call 都提交数据，集成起来一次性提交</li>
+</ul>
+</li>
+<li>GPU
+<ul>
+<li>纹理压缩</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>cube map：
+<ul>
+<li>(u, v) 计算：用向量绝对值最大的分量代表的面，其他分量除以该绝对值，再映射到 [0, 1]</li>
+</ul>
+</li>
+</ul>
+<h2 id="14-pc手机图形-api">1.4 PC手机图形 API</h2>
+<ul>
+<li>支持 OpenGL ES 3.2 的 骁龙型号
+<ul>
+<li>420+</li>
+</ul>
+</li>
+<li>怎么看待 Vulkan
+<ul>
+<li>新一代图形 API，类似 DX12，提供更底层的修改和定制</li>
+</ul>
+</li>
+<li>顶点缓冲区：显存中存储顶点</li>
+<li>OpenGL ES 3.0 移除 alpha 测试（？）[片段着色器可以抛弃片段，因此放到片段着色器中]</li>
+<li>内容太多（www.bilibili.com/video/BV1q5411w7E8）</li>
+<li>Ardeno 是 GPU</li>
+</ul>
+<h2 id="21-色彩空间介绍">2.1 色彩空间介绍</h2>
+<ul>
+<li>光经过反射后，物体会吸收一定波长的光</li>
+<li>反射什么光，物体就呈现什么颜色</li>
+<li>人眼在高亮度和低亮度时都能看清微小颜色差别（类似相机调整光圈大小），但无法两者同时满足</li>
+<li>S for 蓝色，M for 绿色，L for 红色（小中大波长）</li>
+<li>Munsell 色彩系统：HSL / HSV</li>
+<li>CIE XYZ 由 CIE RGB Color Matching 的 RGB 线性转换得到，最后做归一化</li>
+<li>CIE XYZ 色彩分布不均匀</li>
+<li>色彩空间指标：
+<ul>
+<li>色域（基色坐标，整个色彩空间是三角形）</li>
+<li>Gamma（如何对三角形内进行切分/采样）
+<ul>
+<li>gamma = 1 是均匀采样</li>
+<li>sRGB 的 gamma 约等于 2.2，外面采样间隔细，中间采样间隔粗</li>
+</ul>
+</li>
+<li>白点（三角形中心）</li>
+</ul>
+</li>
+</ul>
+<h2 id="22-模型与材质">2.2 模型与材质</h2>
+<ul>
+<li>OBJ 不包含 顶点色（单个顶点的 RGBA）</li>
+<li>fbx 支持 顶点色，多象限（套） uv，UE4 LOD（细节层次模型【自动根据占屏幕的大小使用面数较少的模型】）</li>
+<li>Glossy 镜面折射（类似 glossy 反射，在镜面方向的一个小范围内折射）：可以先渲染后面物体，将渲染结果交给该 glossy 的 shader 进行采样，然后设置 glossy 的透明度为半透明，即可做到毛玻璃效果</li>
+<li>多层材质：木地板上面涂了一层油漆</li>
+<li>次表面散射：一般半透明，玉石、蜡烛、牛奶等（光线可进入物体内部，在内部多次折射后再出去）</li>
+<li>多层皮肤模型：油脂层，表皮层，真皮层</li>
+<li>模型数据在渲染中的作用
+<ul>
+<li>顶点动画：Vshader 中修改顶点数据，使模型移动</li>
+<li>纹理动画：Fshader 中修改 uv，使纹理移动</li>
+<li>顶点色：渲染时影响输出结果</li>
+</ul>
+</li>
+<li>非真实感渲染时，使顶点朝法线偏移一段距离，然后渲染一个颜色形成描边（如果产生描边断裂是因为法线不连续）</li>
+<li>光滑组在光照时会把顶点法线重新计算，使其光滑</li>
+</ul>
+<h2 id="23-常用函数介绍">2.3 常用函数介绍</h2>
+<ul>
+<li>HLSL</li>
+<li>ret = frexp(x, out exp) 分解浮点数为尾数和指数，x = ret*2^exp (x=0,ret = exp = 0)</li>
+<li>lerp(x, y, s) 线性插值</li>
+<li>smoothstep(min, max, x) 根据 x 在 min，max 中的位置进行 Hermite 插值</li>
+<li>all 判断全零（bool），clip 小于某值丢弃（返回值 void）</li>
+<li>sign 判断正负</li>
+<li>isinf（inf，0x3f3f3f3f，能满足 inf + inf = inf）</li>
+<li>reflect 反射方向，refract 折射方向，lit 返回光照（ambient，diffuse，specular，1）</li>
+<li>faceforward 返回面向屏幕的面法线</li>
+<li>采样：（2D）、lod、bias、grad、proj</li>
+</ul>
+<h2 id="24-传统经验光照模型详解">2.4 传统经验光照模型详解</h2>
+<ul>
+<li>Phong 会在视线和光照在同侧时产生高光缺失（反射光与视线间角度大于 90 度，负的余弦会被变为 0）</li>
+</ul>
+<h2 id="25-gamma-矫正">2.5 gamma 矫正</h2>
+<ul>
+<li>传递函数：光转电 - 电转光</li>
+<li>$$ V_{out} = {v_{in}}^{gamma} $$</li>
+<li>gamma 对线性三色值和非线性视频信号之间进行编解码</li>
+<li>非线性存储为了优化空间和带宽（人眼对暗部更敏感，暗部用高精度，亮部用低精度）</li>
+<li>渲染前要转换为线性颜色空间</li>
+<li>Unity 硬件特性支持：
+<ul>
+<li>sRGB Frame Buffer 和 sRGB Sampler</li>
+<li>一些平台不支持</li>
+<li>比在 shader 中进行矫正要快</li>
+</ul>
+</li>
+<li>工作流：
+<ul>
+<li>Substance Painter 贴图为 sRGB</li>
+<li>Photoshop 导出时可设置 gamma 值（不设置默认为 sRGB）</li>
+<li>Photoshop 图层间混合前上层图层会进行 gamma（可设置 “用灰度系数混合 RGB 颜色” 参数为 1）</li>
+</ul>
+</li>
+<li>pow 进行 gamma 效率低（Unity 中 gamma 函数的 Exact 和 不带 Exact）</li>
+</ul>
+<h2 id="26-ldr-和-hdr">2.6 LDR 和 HDR</h2>
+<ul>
+<li>动态范围 = 最高亮度 / 最低亮度</li>
+<li>LDR：
+<ul>
+<li>8位（256）</li>
+<li>单通道 0-1</li>
+<li>jpg、png</li>
+</ul>
+</li>
+<li>HDR：
+<ul>
+<li>大于 8 位</li>
+<li>单通道超过 1</li>
+<li>hdr、tif、exr、raw</li>
+</ul>
+</li>
+<li>相机：LUT</li>
+<li>HDR &gt; 1 才有 Bloom</li>
+<li>Unity
+<ul>
+<li>Camera
+<ul>
+<li>渲染为 HDR buffer</li>
+<li>做后处理：Bloom &amp; Tone mapping，得到 LDR</li>
+<li>LDR 发送给屏幕</li>
+</ul>
+</li>
+<li>Lightmap
+<ul>
+<li>Project Setting - Player - Lightmap Encoding： High Quality（HDR 光照贴图支持）</li>
+<li>（Normal Quality： RGBM 编码）</li>
+</ul>
+</li>
+<li>拾色器
+<ul>
+<li>Intensity 滑动条</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>HDR 优点
+<ul>
+<li>超过 1 的部分不会被截掉，增加亮部细节，减少曝光</li>
+<li>减少画面暗部色阶感</li>
+<li>支持 Bloom</li>
+</ul>
+</li>
+<li>HDR 缺点
+<ul>
+<li>慢，显存占用大</li>
+<li>不支持硬件抗锯齿</li>
+<li>部分手机不支持</li>
+</ul>
+</li>
+<li>Bloom
+<ul>
+<li>渲染 scene color</li>
+<li>计算超出阈值的高光像素</li>
+<li>对像素做高斯模糊</li>
+<li>叠加</li>
+<li>Unity
+<ul>
+<li>提高光像素，存入 Render texture</li>
+<li>下采样 1/2</li>
+<li>重复，直到 1/8，然后停止（不提）</li>
+<li>上采样复原，并叠加之前存的高光</li>
+<li>重复，直到原大小（并叠加）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tone mapping
+<ul>
+<li>色调映射</li>
+<li>HDR -&gt; LDR</li>
+<li>S 曲线映射（线性效果差）
+<ul>
+<li>ACES（广泛）</li>
+<li>其他</li>
+</ul>
+</li>
+<li>LUT（Look-Up-Table）
+<ul>
+<li>Unity 中 color grading</li>
+<li>对 LDR 做变化</li>
+<li>3D LUT</li>
+<li>PS 中 LUT 相当于画面滤镜</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="27-bump-mapping-改进">2.7 Bump Mapping 改进</h2>
+<ul>
+<li>法线、视差、浮雕映射</li>
+</ul>
+<h4 id="法线贴图-normal-mapping">法线贴图 Normal Mapping</h4>
+<ul>
+<li>法线贴图由高模映射到低模生成，或者使用 PS、SD</li>
+<li>切线空间
+<ul>
+<li>存储法线</li>
+<li>顶点法线为 Z 轴，切线和 uv 一致为 X 轴，叉乘得到副切线 Y 轴</li>
+<li>需要空间转换，在同一空间计算光照</li>
+<li>切线空间到世界空间的转换
+<ul>
+<li>TBN 矩阵
+<ul>
+<li>正交矩阵，逆就是转置</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>方便进行纹理应用在不同的模型上</li>
+<li>方便进行 uv 动画</li>
+<li>方便压缩（法线在 0-1，可以存两个然后推导第三个值）</li>
+</ul>
+</li>
+<li>Unity 压缩
+<ul>
+<li>非移动平台，DXRT5nm，两个通道
+<ul>
+<li>需要从存储时的 0-1 映射回 -1 - 1 来计算法线</li>
+<li>添加系数去调整扰动效果大小</li>
+</ul>
+</li>
+<li>移动平台，RGB</li>
+</ul>
+</li>
+</ul>
+<h4 id="视差贴图-parallax-mapping">视差贴图 Parallax Mapping</h4>
+<ul>
+<li>高度图，基于顶点位移，纹理偏移</li>
+<li>根据存储的高度（深度），近似地去获得偏移量（相似三角形）</li>
+<li>采样偏移的点</li>
+<li>更精确：Steep Parallax Mapping
+<ul>
+<li>根据深度分层</li>
+<li>每次尝试一个深度并计算偏移</li>
+<li>看该深度是否比目前偏移的贴图坐标对应的深度大</li>
+<li>如果大，则返回偏移</li>
+</ul>
+</li>
+</ul>
+<h4 id="浮雕贴图-relief-mapping">浮雕贴图 Relief Mapping</h4>
+<ul>
+<li>射线步进 + 二分查找
+<ul>
+<li>先类似 Steep Parallax Mapping 的方法找到大于小于的两个深度</li>
+<li>在该深度间进行二分查找最合理的值</li>
+</ul>
+</li>
+<li>直接使用二分查找可能跳过前面的遮挡点（很高 + 很深的组合）</li>
+<li>视差 闭射/遮挡 贴图 Parallax Occlusion Mapping
+<ul>
+<li>不做二分查找</li>
+<li>在两个点采样，用插值作为结果</li>
+</ul>
+</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%8A%80%E6%9C%AF%E7%BE%8E%E6%9C%AF/">技术美术</a>
+        
+            <a href="/tags/%E7%99%BE%E4%BA%BA%E8%AE%A1%E5%88%92/">百人计划</a>
+        
+            <a href="/tags/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">课程笔记</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">相关文章</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/article/ta_100_arts/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">TA_100_Arts</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/article/portfolio/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Portfolio</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/article/games101_lecture22/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GAMES101_Lecture22</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/article/games101_lecture21/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GAMES101_Lecture21</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/article/games101_lecture20/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GAMES101_Lecture20</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2023 5rLku
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="2.3.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

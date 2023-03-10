@@ -6,14 +6,250 @@
     <description>Recent content in 技术 on 5rLku</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 15 Feb 2023 11:24:41 +0800</lastBuildDate><atom:link href="https://5rLku.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Mar 2023 13:21:23 +0800</lastBuildDate><atom:link href="https://5rLku.github.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Portfolio</title>
+      <link>https://5rLku.github.io/article/portfolio/</link>
+      <pubDate>Fri, 10 Mar 2023 13:21:23 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/portfolio/</guid>
+      <description>技术美术作品集 Curl-noise 速度场流体 OpenGL .video-shortcode {position: relative;	max-width: 90%;height: auto;}There should have been a video here but your browser does not seemto support it.curl-noise 噪声速度场 .video-shortcode {position: relative;	max-width: 90%;height: auto;}There should have been a video here but your browser does not seemto support it.curl-noise 障碍球速度场  Perlin Noise 生成 curl-noise  复现论文《Curl-Noise for Procedural Fluid Flow》 对噪声场求其旋度场，该旋度场的散度处处为 0 ，可以模拟流体粒子的流动 对旋度场调制，生成含障碍物的速度场    Houdini .</description>
+    </item>
+    
+    <item>
+      <title>TA_100_Arts</title>
+      <link>https://5rLku.github.io/article/ta_100_arts/</link>
+      <pubDate>Wed, 08 Mar 2023 21:32:45 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/ta_100_arts/</guid>
+      <description>百人计划_美术笔记 1.1 美术理论基础 光影  黑白灰 明暗五调子：高光、亮面、灰面、明暗交界线、暗面  透视  平行透视：一点透视，物体在远处消失于一个点 成角透视：两点透视，物体在远处向两个点消失（左右） 三点透视：在竖直方向上再多一消失点 散点透视：不同物体不同透视，国画常见 空气透视：色彩透视，烟雾等 达芬奇：色彩、消逝（清晰度）、线（大小）  色彩  色相、饱和度、明度 三原色：光学三原色RGB（叠加白）、颜料三原色CMY（叠加黑） 间色：两种原色叠加 复色：原+间 / 间 + 间 同类色：同色相不同倾向（60 度） 互补色：色相环距离 180 度，对比强烈 对比色：120 - 180 度  构图  zelda：三角设计原则  镜头语言  广角、长焦 拉（远离）、移（移动）、跟拍（跟随）、摇（选装）、升降（Y轴）、推（接近）  游戏美术概念设计  确定风格：用户群、游戏理念、平台性能 分类：东、西、卡通、写实  补充  脏、乱、散  1.2 角色设计精要  角色关键词（独一无二） 素材和灵感（基于已有） 构图设计（轮廓剪影、内在构成）  轮廓：基础形状 构成：点、线、面、简繁比重、疏密   配色（传达感受） 服装设计（角色性格、细节信息）  1.3 场景设计精要  主题 风格 设计构图：  三分法：重点放在 1/3 处 环形法：道路感、距离感、聚焦中心、封闭感 对称：平静稳定、但单一不生动 垂直线：节奏感（长短粗细） 水平线：平稳舒展（不宜过多过密） 十字分割：集中于一点 视觉引导线：引导到重点   速涂场景剪影  统一中求变 辨识度 问题  杂乱无章（要凸出核心） 变化单一（角度、间隔）   迭代  添加元素 局部变形、替换     剪影内切  分主次结构 - 定明暗 - 优化调子疏密等 三分法重心部位要突起   前景场景和纵深  前景  主体前面 衬托 符合主题   后景产生纵深   场景色彩分类  比例：70：25：5 - 主色：辅助色：点缀色 搭配：相邻色、间隔色、互补色 冷、暖、中性（黑白灰） 叠色：黑白灰 + 叠色   光影氛围  打光（正光、逆光） 光影分割    2.</description>
+    </item>
+    
+    <item>
+      <title>TA_100_Graphics</title>
+      <link>https://5rLku.github.io/article/ta_100_graphics/</link>
+      <pubDate>Thu, 02 Mar 2023 22:08:44 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/ta_100_graphics/</guid>
+      <description>百人计划_图形查漏笔记 1.1 渲染流水线  应用阶段  粗粒度剔除：直接剔除视锥体外的物体   几何阶段  顶点 shader &amp;mdash; 几何 shader &amp;mdash; 曲面细分 shader &amp;mdash; 投影 &amp;mdash; 裁剪 &amp;mdash; 屏幕映射 几何 shader：图元着色 或者 基于图元产生新图元 裁剪：  视锥体裁剪：剔除视锥体外的顶点，在边界上产生新顶点 正面背面的 culling：根据三角形顶点的顺逆时针决定正背面，选择是否渲染正背面     光栅化  三角形设置 &amp;mdash; 三角形遍历 &amp;mdash; 片元shader &amp;mdash; 逐片元操作 抗锯齿：  SSAA 在光栅化前扩大 buffer，光栅化后下采样 MSAA 在光栅化时建立子像素，根据覆盖率决定像素颜色 FXAA/TXAA 属于图像操作，后处理   逐片元操作  决定最终像素 OpenGL 顺序：  scissor test：自定义的不绘制区域 alpha test stencil test depth test blend        1.</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture22</title>
+      <link>https://5rLku.github.io/article/games101_lecture22/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:38 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture22/</guid>
+      <description>Animation Cont. Single Particle Simulation  速度场 $$ {dx\over dt} = \dot{x} = v(x，t)$$ 单变量，常微分方程（Ordinary Differential Equation，ODE） Euler&amp;rsquo;s Method  离散化时间 全部用上一帧的量去估计下一帧的量（粒子的位置，速度，加速度） 问题：非常不准确（步长太大时有很大的误差，Errors） 问题：不稳定（绕圆时不管步长取多小都会逐渐偏离圆心，Instability）   Combating Instability  Midpoint Method  用欧拉法计算得到的位置和初始位置的中点 用中点处的速度使用欧拉法计算得到最终的位置 Modified Euler：等效于比欧拉方法多了个二次项   Adaptive Step Size  先从起点做一次欧拉 再从起点做两次欧拉，每次欧拉使用一半的时间 如果两者相差大于阈值，则步长减半，重复上述操作 直到两者相差小于阈值   Implicit Euler Method  使用下一个时刻的加速度计算速度 然后使用计算的速度计算下一个时刻的位置 解非线性问题 求根算法：牛顿法等 稳定性好 定义 stability  local truncation error（every step）和 total accumulated error（overall） 值没有意义，应该研究阶（order） Implicit Euler Method 是 order 1 (h for step)  local truncation error：O(h^2) total accumulated error：O(h) 阶越大越好（当 h 减小时，error 减小得越多）       Runge-Kutta Families  一类擅长解 ODE 的方法 order 4 用得最多，a.</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture21</title>
+      <link>https://5rLku.github.io/article/games101_lecture21/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:35 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture21/</guid>
+      <description>Animation History  fps  电影：24 视频：30 VR：90    Keyframe Animation  在关键帧之间插值  Physical Simulation   Application
+  Cloth
+  Fluids
+  Mass Spring System
+  Hair
+    A Simple Spring
+ 理想弹簧：$$ \mathcal f_{a\to b} = k_s(\mathbf b-\mathbf a) $$  zero rest length   Non-zero Rest Length：$$ \mathcal f_{a\to b} = k_s{\mathbf b-\mathbf a\over||\mathbf b-\mathbf a||}(||\mathbf b-\mathbf a||-l) $$  不会停止运动，永远振动   $$ x,\dot x 一阶导,\ddot x 二阶导$$ Simple Motion Damping  $$ \mathcal f=-k_d\dot{ \mathbf b }$$ 会停止所有运动（只能表示弹簧外部的损耗，无法表示弹簧内部）   Internal Damping  $$ \mathcal f_{b} = -k_d{\mathbf b-\mathbf a\over||\mathbf b-\mathbf a||}(\dot {\mathbf b}-\dot {\mathbf a})\cdot {\mathbf b-\mathbf a\over||\mathbf b-\mathbf a|| }$$ b 受到的 damping force = b 相对于 a 的速度投影到 a 到 b 方向的大小 * a 到 b 方向      Structures from Springs</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture20</title>
+      <link>https://5rLku.github.io/article/games101_lecture20/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:31 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture20/</guid>
+      <description>Color &amp;amp; Perception Light Field / Lumigraph  Plenoptic Function  reconstruct every possible view，at every moment，from every position，at every wavelength $$ P(\theta,\phi,\lambda,t,V_x,V_y,V_z) $$   光场，是全光函数的一部分，任何位置往任何方向去的光的强度 两个数表示方向，两个数表示位置 把物体的包围盒看成两个平面，平面上的两个点（u，v）（s，t）定义一条光线 类似苍蝇复眼，一个个小透镜把来自不同方向的光分开再记录下来  Light Camera  支持后期重新聚焦（Computational Refocusing） 把一个像素的 irradiance 记录为一块各种 radiances 每个像素选同样方向的 radiance，可还原为照片（换这个固定方向的 radiance 相当于移动相机） 问题：通常分辨率不足，成本高  Physical Basis of Color  光谱，特别是可见光 Spectral Power Distribution（SPD）谱功率密度  线性   颜色是人的感知，光的波长并不是颜色  Biological Basis of Color  Rod cells 感知光强 Cone cells 感知颜色  S，M，L 分别感知小波长，中波长，长波长 产生 3 个数，送到人脑，产生颜色感知    Metamerism  同色异谱现象 不同光谱有着同样的 S，M，L 的感知（同样的颜色）  Color Reproduction / Matching  Addictive Color CIE RGB Color Matching  Color Space  Standardized RGB（sRGB）  广泛应用 色域有限   CIE XYZ  Y 一定程度表示亮度 色域图像：归一化，固定 Y 去画   Perceptually Organized Color Spaces  HSV（Hue - Saturation - Value） 色调，饱和度，亮度   CIELAB（L*a*b*）  亮度（黑白），红绿，蓝黄三个轴 Opponent Color  人脑决定的 颜色是相对的（Relative）     CMYK  subtractive color space cyan，magenta，yellow，key 带黑色为了不浪费彩色墨水（黑色墨水便宜）    Not Cover  High Dynamic Range（HDR） Gamma correction  </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture19</title>
+      <link>https://5rLku.github.io/article/games101_lecture19/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:26 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture19/</guid>
+      <description>Cameras, Lens &amp;amp; Light Fields Cameras  传感器记录 irradiance  Pinhole Image Formation  无法拍摄出景深（depth of field） 可以用 focal length 和 sensor大小 定义 FOV  一般固定使用 35mm 的胶片大小来定义 那么 focal length 就决定 FOV    Exposure   H = Time x Irradiance（T x E）
+  T 由 快门 shutter 决定
+  E 由光圈大小 lens aperture 和 focal length 决定
+  Aperture size
+ f-stop 光圈直径的逆（Informal Understanding） 越小，光圈越大    Shutter speed</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture18</title>
+      <link>https://5rLku.github.io/article/games101_lecture18/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:23 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture18/</guid>
+      <description>Advanced Topics in Rendering Advance Light Transport Unbiased/Biased light transport methods  unbiased：不管用多少样本进行 monte carlo 估计，期望都是正确的 biased：有限次采样，结果会有偏差，但无限次采样，期望会收敛到正确值（consistent）  Unbiased Bidirectional Path Tracing  从相机和光源同时生成 sub-paths 连接 sub-paths 的终点 难实现，慢  Metropolis Light Transport  Markov Chain Monte Carlo 局部的方法 局部对已经存在的光线进行扰动，产生新光线 收敛速度难以估计 局部，每个像素收敛速度不一样，画面脏 无法渲染动画  Biased Photon Mapping  擅长渲染 caustics two-stage 的方法 stage 1  photon tracing 从光源发射 photons，不断弹射并记录，直到打在 diffuse 表面   stage 2  photon collection 从摄像机发射 sub-paths，不断弹射并记录，直到打在 diffuse 表面   计算  local density estimation 有更多 photons 的地方应该更亮 给定一个点，找最近的 N 个 photons，找他们覆盖的面积   photon 数量多，noisy/数量少，blurry  足够多，覆盖的面积更小，更接近真实 不是无限多，都会不是正确的，只是接近，所以会 blurry   如果选择固定的面积，就不再 consistent  Vertex Connection and Merging  combination of BDPT &amp;amp; Photon Mapping  Instant Radiosity（IR）  many-light approaches 已经被照亮的面都可以看成光源 从光源生成 sub-paths，终点生成 Virtual Point Light（VPL） 使用 VPL 来渲染场景 快速，diffuse 场景效果好 离 shading point 很近的点会产生亮点（考虑从光源采样的距离项） 无法处理 glossy  Advanced Appearance Model Non-surface Models Participating Media  雾，云 光线穿过时会被吸收和散射 Phase Function 决定如何散射 渲染  随机选方向弹射 随机选距离前进 每个 &amp;ldquo;shading point&amp;rdquo; 和光源连接    Hair / Fur / Fiber （BCSDF）  Kajiya-Kay Model Marschner Model  Glass-like cylinder cuticle &amp;amp; cortex（absorbs） R，TT，TRT 三种光线传播   Double Cylinder Model：Medulla 也重要  R，TT，TRT，TTs，TRTs    Granular material  香料，盐等一粒一粒的  Surface Models Translucent material（BSSRDF）  subsurfaces scattering scattering functions，BSSRDF Dipole Approximation  用两个光源近似    Cloth  Fibers to Ply to Yarn Render as Surface：考虑编织的 pattern，处理为 surface，使用 BRDF Render as Participating Media Render as Actual Fibers  Detailed Material（Non-statistical BRDF）  考虑像素覆盖的微表面的法线分布，替代 BRDF 中光滑的法线分布 Recent Trend： Wave Optics  Procedural Appearance  不生成，需求的时候实时计算 compute noise function perlin noise  </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture17</title>
+      <link>https://5rLku.github.io/article/games101_lecture17/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:20 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture17/</guid>
+      <description>Materials &amp;amp; Appearances Material == BRDF   Diffuse / Lambertian Material
+ 能量守恒，入射和出射的 irradiance 相同 所有入射均匀地出射，radiance 也相同 BRDF 和 radiance 则为常数，提出来然后根据渲染方程积分 $$ L_o(\omega_o)=\pi f_rL_i $$ $$ f_r = {\rho(albedo)\over\pi} $$    Glossy Metal 材质在镜面反射方向的一个小范围内产生多次反射
+  Glass 材质一部分折射进入，一部分镜面反射
+  任何出射方向均可以用类似立体角的定义方式，通过两个夹角和入射方向来计算
+  物体内外折射率和法线夹角的正弦的乘积相同
+  如果物体外的折射率 大于 物体内的折射率，则不会发生折射（不为实数），此时发生全反射
+  Fresnel Term
+ 对于同一个物体来说，入射角度和法线的夹角会影响光的反射量 Schlick&amp;rsquo;s approximation：$$ R_0 = ({n_1 - n_2 \over n_1 + n_2})^2 $$ $$ R(\theta) = R_0 + (1-R_0)(1-\cos\theta)^5 $$    Microfacet Material</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture16</title>
+      <link>https://5rLku.github.io/article/games101_lecture16/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:17 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture16/</guid>
+      <description>Ray Tracing 4 (Monte Carlo Path Tracing) Monte Carlo Integration  在积分区域内随机采样，每次采样取得一个长方形面积（积分），最后把所有采样平均，来近似得到该函数的定积分 $$ \int f(x)dx={1\over N} \sum_{i=1}^N {f(X_i)\over p(X_i)}, X_i \sim p(x)$$ 采样越多，结果越准 采样 x，在 x 上积分  Path Tracing  Whitted-Style Ray Tracing Problem  specular 反射，无法处理 glossy diffuse 停止，无法处理 间接光照   渲染方程  积分如何计算？  Monte Carlo 只考虑直接光照的话  计算 shade（p，wo） 随机选取 N 个方向 wi ~ pdf Lo = 0 对每个 wi 追踪，如果打到光源，Lo += （1/N）* Li * fr * cosine / pdf（wi）   把间接光照的产生物体考虑为光源，等同于直接光照  对每个 wi 追踪，如果打到物体 q，Lo += （1/N）* shade（q，-wi） * fr * cosine / pdf（wi）   存在问题  考虑的光线太多（如果 100 根光线都打到第二个物体，会产生 10000 根新光线）  每次只随机考虑 1 根光线，光线数就不会增长（也就是 Path Tracing） 但是这样太 Noisy。考虑从每个像素处增加采样点，每个采样点只发出一根光线 Ray Generation       递归如何执行？  递归不会停止 Russian Roulette  给定一个概率 P，每次以概率 P 继续发射光线，1-P 概率不继续发射光线 随机数在 P 的时候，计算为 Lo / P 在 1-P 的时候，计算为 0 好处：期望没有改变，E = P *（Lo / P） + （1-P）* 0 = Lo       目前的方法不够 Efficient  均匀采样的情况下很多光线并没有打到光源 考虑在光源上面采样，把积分转化为在光源上积分 找到光源上 dA 和 平面上 dw 的关系，完成积分转化（两个法线和光方向的夹角，立体角的定义，微积分知识） 将光照分为：光源的直接贡献 + 其他反射的贡献 最后的一点修改：如果考虑光源贡献时中间有物体挡住，就设为 0   一些 Side Notes  路径追踪不好处理点光源（一般为面光源），需要点光源时可以做成很小面积的面光源 能做到 Photo-realistic Ray Tracing 包括一系列的光线传播的综合方法（个人理解）  Unidirectional &amp;amp; bidirectional path tracing photon mapping Metropolis light transport VCM / UPBP     没 cover 的  Uniformly Sampling the hemisphere 如何做？ 什么 pdf 是最好的？（importance sampling） 随机数很重要（low discrepancy sequences） 采样半球和采样光源结合（multiple imp.</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture15</title>
+      <link>https://5rLku.github.io/article/games101_lecture15/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:14 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture15/</guid>
+      <description>#Ray Tracing 3 (Light Transport &amp;amp; Global Illumination)
+Irradiance  与每单位面积的平面垂直的光 intensity 没有在球壳上衰减，是球壳面积变大导致 irradiance 在衰减  Radiance  在单位立体角 以及 单位面积上的光 Radiance = Irradiance per unit solid angle = Intensity per projected unit area  Bidirectional Reflectance Distribution Function （BRDF）  在一个点的反射  考虑一个单位面积，某个入射方向的 Radiance，投影到垂直于平面方向，得到该平面的 Irradiance 考虑该 Irradiance 通过什么比例分配给该单位面积各个方向的反射的 Radiance 该比例就是 BRDF（d Radiance / d Irradiance） 定义了物体的材质   反射方程  考虑单位面积的各个不同的入射，积分得到某个单方向的出射 $$ L_r(p,\omega_r) = \int_{H^2}f_r(p, \omega_i \to \omega_r)L_i(p, \omega_i)\cos\theta_id\omega_i $$ 递归的方程   渲染方程  重写反射方程，加上自发光项 $$ L_o(p,\omega_o) = L_e(p, \omega_o) + \int_{\Omega^+}L_i(p, \omega_i)f_r(p, \omega_i,\omega_o)(n\cdot\omega_i)d\omega_i $$ 假设所有光线都朝外，在半球上（平面内部的光线不考虑） 概念：某个方向的 Radiance = 该点辐射的 Radiance + 该点反射的 Radiance 简写：$$ L = E + KL $$ 化简加泰勒展开：$$ L = E + KE + K^2E + K^3E + &amp;hellip; $$ 得到：光源直接光照 + 平面直接光照(在该平面反射一次) + 间接光照(在该平面反射后又从其他平面反射回来的)+ 弹射更多次的间接光照 + &amp;hellip; 全局光照 = 直接光照 + 间接光照，光栅化 = 光源直接光照 + 平面直接光照    Probability Review  Random Variable Probability Density Function（PDF）：和为 1 Expected Value：求和（变量值 X 概率） Continuous：  某变量概率 = PDF 在该变量小范围求积分（面积） PDF 的积分为 1 期望 = 求积分（变量 X PDF） $$ X \sim p(x), Y = f(X)$$$$ E[Y] = E[f(X)] = \int f(x)p(x)dx$$    </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture14</title>
+      <link>https://5rLku.github.io/article/games101_lecture14/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:10 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture14/</guid>
+      <description>Ray Tracing 2 (Acceleration &amp;amp; Radiometry) Acceleration Using AABB Uniform Grids  建立加速格子的预处理  找到包围盒（包围盒是大范围） 划分格子 记录存在物体的格子（注意是三角形网格，物体内部的格子不算存在） 遍历光线走过的格子 经过有物体的格子则和该格子中所有物体进行相交判断 （与光线相交的下一个格子一定是当前格子的某个相邻格子，有计算方法）[光栅化直线]   格子分辨率：  太小，遍历物体太多 太大，遍历格子太多 启发式的算法总结：#cells = C * #objs，C 大致在 27（3D情况下）   物体在场景中分布均匀的时候效果好 &amp;ldquo;Teapot in the stadium&amp;rdquo; 效果差  Spatial Partition   （物体约等于三角形）
+  常见
+  Oct-Tree：空间划分为八块（高维度表现差）
+  KD-Tree：空间沿着某个轴砍成两块（与维度无关），每次的划分轴按 xyz 顺序排队
+  BSP-Tree：也砍成两块，但非轴向（且高维度时划分复杂）
+    KD-Tree 预处理：形成一颗二叉树
+  KD-Tree 数据结构</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture13</title>
+      <link>https://5rLku.github.io/article/games101_lecture13/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:07 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture13/</guid>
+      <description>Ray Tracing 1 (Whitted-Style Ray Tracing) Why  光栅化不好表现全局的效果  Soft Shadow Glossy Reflection Indirect Illumination 尤其是光线不止弹射一次的情况   光栅化，快速近似，效果相对差 光线追踪，效果好，但是慢 光栅化常常实时，光线追踪常常离线  Basic Ray Tracing Algorithm Light Rays   基础概念假设（不一定在物理上对）
+  光沿直线传播
+  光线之间不会碰撞
+  光线从光源出发，传播后最终到达人眼（reciprocity，可逆性）
+    Ray Casting  Generate Eye Rays  眼睛到每个像素发出 Eye Ray 和场景中物体产生 Closest Intersection Point   Shading Pixels（Local Only）  从 Closest Intersection Point 往光源连一条 Shadow Ray 根据入射、出射、法线来计算 Shading    Recursive（Whitted-Style）Ray Tracing  考虑所有反射和折射的光线 在每个 Intersection Point 都连 Shadow Ray 综合考虑所有 Intersection Point 的 Shading 眼睛发出的叫 Primary Ray，反射折射的叫 Secondary Rays  Ray-Surface Intersection   Ray Equation</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture12</title>
+      <link>https://5rLku.github.io/article/games101_lecture12/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:04 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture12/</guid>
+      <description>Geometry 3 Geometry Processing  Mesh Subdivision：上采样 Mesh Simplification：下采样，保持形状/连接关系 Mesh Regularization：提高三角形质量（个数不变）  Mesh Subdivision  Loop Subdivision  一个三角形分为四个三角形 根据 weights 调整新顶点的位置（新老顶点 updated differently）  新顶点：考虑老顶点的加权 老顶点：考虑度和一个数，考虑自己位置和周围老顶点的位置和     Catmull-Clark Subdivision  非三角形也能用（General Mesh） Quad face 和 Non-quad face Extraordinary vertex，奇异点（度不为4） 每次细分：每个面加一点，每条边加中点，连起来 每次细分会增加 Non-quad face 个奇异点，之后全部为 Quda face，不会再增加奇异点 更新：考虑面的新点，边的新点和老顶点三种情况    Mesh Simplification  Edge Collapse  Quadric Error Metrics：最小化到之前相关面的 L2 距离（平方和距离） 从 Error 最小的开始坍缩 坍缩后会引起其他的 Error 变化  实时更新变化：使用优先队列/堆   属于贪心的做法    Shadow Mapping  用光栅化做阴影 关键：不在阴影中的点必须被光源和摄像机同时看到 经典的方法只能处理点光源（硬阴影） 方法：  1：Render from light  记录 depth image   2A：Render from eye  记录 standard image（with depth）   2B：Project to light  把摄像机能看到的点 1 投影到光源看到的 depth image 上，得到点 2 比较点 1 和 点 2 到光源的深度是否一致     存在浮点数精度问题：改为大于，或者使用 bias 阴影贴图太少，会产生走样 硬阴影 VS 软阴影  光源有大小，才会产生软阴影 点光源只会产生硬阴影    </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture11</title>
+      <link>https://5rLku.github.io/article/games101_lecture11/</link>
+      <pubDate>Tue, 21 Feb 2023 10:43:01 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture11/</guid>
+      <description>Geometry 2 (curves and surfaces) Explicit  Point cloud Polygon mesh  .obj 顶点，法线，纹理坐标和他们的连接关系    Curves Bezier curves  三控制点（Quadratic Bezier）  两条线段插值 0-1 中 t 时刻的点 得到的两个点再连线，插值 t 时刻的点 该点为曲线上的点   四控制点（Cubic Bezier）  同样的操作 直到插值到只有一个点   代数公式  $$ b^n(t) = \sum^n_{j=0}b_jB^n_j(t) $$ Bernstein Polynomials：$$ B^n_i(t) = \begin{pmatrix} n \\ i \end{pmatrix} t^i(1-t)^{n-i}$$   性质  一定过起点和终点 cubic 特有？：出发时方向一定为第一条控制点线段，结束时一定为最后一条控制点线段 先对控制点应用仿射变换再得到曲线 和 先得到曲线再对曲线做仿射变换，没有区别 convex hull：曲线一定在控制点形成的凸包内   逐段 Piecewise  常用 cubic 连续性  C_0 连续（曲线连续）：第一段终点等于第二段的起点 C_1 连续（切线连续）：第一段终点等于第二段的起点等于前后控制点的中点     样条 Spline  可控的曲线 B-Spline：basis spline，有局部性 NURBS    Surfaces Bezier surfaces  Bicubic Bezier Surfaces：4x4 个控制点 类似双线性插值的做法 参数：（u，v）  几何处理  mesh subdivision mesh simplification mesh regularization  </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture10</title>
+      <link>https://5rLku.github.io/article/games101_lecture10/</link>
+      <pubDate>Tue, 21 Feb 2023 10:42:57 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture10/</guid>
+      <description>#Geometry 1 (introduction)
+纹理应用  纹理 = 内存 + 范围查询（滤波） Environment Map 环境光贴图  Utah teapot、Stanford bunny/dragon、Cornell box 认为光照无限远，没有位置信息，只记录方向 Spherical Environment Map，有扭曲的问题  Cube Map：从球出发，到包围盒的面上     Bump/Normal Map 法线贴图  纹理定义高度/法线 高度 -&amp;gt; 法线的计算（flatland）：  原始法线（0， 1） 差分计算凹凸面的梯度 $d_p=c*h(u+1)-h(u)$，得到切线向量（1，dp） 切线向量逆时针旋转 90 度得到（-dp，1） 归一化得到法线   高度 -&amp;gt; 法线的计算（3D）：  原始法线（0，0，1） 计算梯度后旋转并归一化得到法线 在局部坐标下计算   Displacement Map 位移贴图  会真正的修改三角形的顶点 要求模型够精细，频率要比纹理高 DX 有动态曲面细分，可以根据需要来做细分     3D Procedural Noise + Solid Modeling  Perlin noise   提供预计算的结果  Ambient Occlusion 环境光遮蔽   3D Texture &amp;amp; Volume Rendering  Introduction to Geometry Implicit  满足特定关系 f（x，y，z）= 0 具体有哪些点？&amp;mdash;- 困难 判断是否满足/在内外 &amp;mdash;- 简单 类型：  Algebraic Surface Constructive Solid Geometry（CSG）  使用 bool 运算   Distance Function  空间中任意一点到想表示的几何体的最小距离（可以正负，有向）   Level Set  Medical Data（CT，MRI） Physical Simulation   Fractals   好处：  描述稳定 查询简单（内外，距离） 计算光线和平面相交方便 不会走样 很好处理变化（流体）   坏处：  复杂物体难建模    Explicit  直接给定或者 parameter mapping 给定 具体有哪些点？&amp;mdash;- 简单 判断在内外 &amp;mdash;- 困难  </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture09</title>
+      <link>https://5rLku.github.io/article/games101_lecture09/</link>
+      <pubDate>Tue, 21 Feb 2023 10:42:52 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture09/</guid>
+      <description>Shading 3 (Texture Mapping cont.) Barycentric Coordinates  在顶点声明属性，在三角形内部平滑插值 纹理坐标、颜色、法线等 三角形所在平面上任意一点都可以用三角形三个顶点坐标的线性组合表示，且系数和为 1 （不为 1 则该点不在平面内） 把系数看成坐标，得到重心坐标 当点在三角形内部的时候，重心坐标值均为正数 重心坐标可以由面积比求出（该点对面的小三角形面积 / 大三角形面积） 三角形重心：坐标为 (1/3, 1/3, 1/3) 也有不用面积的一般表示的公式 插值时根据坐标来线性插值属性 投影变换下不能保证重心坐标不变（必须在三维空间做插值，不能在投影后的空间中）  应用纹理  根据每个像素对应的 (u, v) 去纹理中采样 采样得到的颜色通常设置为 diffuse albedo $K_d$  Texture Magnification 纹理放大  纹理太小，分辨率太低，一定范围内的 pixel 都映射到同一个 texel  插值：  nearest：找最近的整数 bilinear：在包含该 texel 最小的整数矩形（四个）中在 x，y 坐标上做两方向的一共三次线性插值（2 + 1） bicubic：在最近的十六个，每次用四个做三次方的插值     纹理太大，会有 moire 轮和锯齿，产生走样  近处，屏幕上的像素覆盖的纹理区域较小，远处较大（远处的一个像素包含更大范围的物体） 不能用一个像素中心点去近似整片大区域 超采样可以处理，但代价大 采样引起问题，那就避免采样 Mipmap：允许做（快速、近似、正方形）范围查询  每多加一个 Level，边长变为一半 存储量为原本的 4/3（只多 1/3 的存储量） 计算 Level：先求出像素在纹理上的近似的正方形范围，然后对正方形边长做 log2（在哪个级别的纹理上该区域会变成一个 texel 的大小） 相邻像素的 Level 不连续（Level 不为整数时，直接 nearest 导致）：插值，trilinear（相邻的两个 Level 上先做双线性插值，然后两个 Level 再做线性） 有可能出现 overblur：部分解决，Anisotropic Filtering，各向异性过滤  Mipmap 只有正方形图 Anisotropic Filtering 提供长宽不相同的矩形图 极限代价为原本的三倍 2X，4X，8X，16X：多生成对应级别的图 无法解决斜的区域，EWA filtering：用多个圆形组成区域        </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture08</title>
+      <link>https://5rLku.github.io/article/games101_lecture08/</link>
+      <pubDate>Tue, 21 Feb 2023 10:42:47 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture08/</guid>
+      <description>Shading 2 (Shading, Pipeline and Texture Mapping) 着色 Blinn-Phong Specular  强度取决于观察方向 $\textbf v$，镜面反射方向最亮 当 $\textbf v$ 和镜面方向越近，等价于半程向量 (half vector) $\textbf h$ 越接近于法向量 $\textbf n$ $$\mathbf h = {\mathbf v + \mathbf l \over ||\mathbf v + \mathbf l||}$$ $$L_s = k_s(I/r^2)max(0, \mathbf n \cdot \mathbf h)^p$$ 用 $\textbf l$ 和 $\textbf v$ 来衡量则为 Phong 模型 $p$ 指数用来使得高光更加集中（考虑余弦函数的 n 次方），Blinn-Phong 一般为 100-200  Ambient  不取决于任何因素 看成一个常数级别的颜色值 $$ L_a = k_aI_a $$ 是一个近似假设  Blinn-Phong 反射模型  $$L = L_a + L_d + L_s $$  着色频率  Flat Shading：每个三角形平面着色，面法线 Gouraud Shading：每个顶点着色，顶点法线，三角形内部使用插值 Phong Shading：每个像素着色，像素法线 法线计算  顶点法线：顶点所在的所有三角形的面法线的平均值（简单/加权） 像素法线：顶点法线的重心插值    Graphics (Real-time Rendering) Pipeline  应用 &amp;mdash; 顶点处理 &amp;mdash; 三角形处理 &amp;mdash; 光栅化 &amp;mdash; 片元处理 &amp;mdash; 帧缓冲操作 &amp;mdash; 展示 现代管线可以自定义 Shader Vertex Shader，Fragment Shader Shadertoy 网站 GPU：管线硬件实现 Geometry Shader，Compute Shader  纹理映射  纹理是 2D 图像 映射指把纹理贴到 3D 物体上 纹理坐标 (u, v)，范围 0-1 纹理无缝衔接：tiled 三角形内部插值：重心坐标 Barycentric Coordinate  </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture07</title>
+      <link>https://5rLku.github.io/article/games101_lecture07/</link>
+      <pubDate>Tue, 21 Feb 2023 10:42:28 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture07/</guid>
+      <description>Shading 1 (Illumination, Shading and Graphics Pipeline) 可见性/遮挡  画家算法：先画离镜头远的物体，再画离镜头近的去遮挡远的物体 需要根据物体的深度排序 存在不可解的深度排序  Z-Buffering  对每个像素记录最近的深度（z-value） 这里简化计算，假设 z 小离屏幕近 算法  for 每个三角形  for 每个像素  if 新的 z 小于 z-buffer 中的 z  更新 framebuffer 颜色 更新 z-buffer 值         复杂度：O(n)，假设每个三角形有常数个像素 与绘制顺序无关 考虑 MSAA，可能需要对每一个采样点（子像素）运用 z-buffering z-buffer 无法处理透明物体  着色  给物体赋予明暗和颜色 课程定义为：给物体应用材质 Material  Blinn-Phong  直接光照：镜面光 Specular，漫反射 Diffuse 简介光照：环境光 Ambient  Shading Point   从平面上的一个 shading point 出发有</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture06</title>
+      <link>https://5rLku.github.io/article/games101_lecture06/</link>
+      <pubDate>Mon, 20 Feb 2023 15:42:43 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture06/</guid>
+      <description>Rasterization 2 (Antialiasing and Z-Buffering) 走样  走样原因：信号变化太快，采样速度跟不上 方法：blur/filter 后 再采样 不能先采样再 blur/filter  频域  傅里叶级数展开：任何函数都可以写成正弦和余弦函数的线性组合 + 常数项 傅里叶变换：把时域函数转换为频域函数 高频率的函数需要更快的采样 走样：同样的采样方法采样两个频率不同的函数，得到的结果无法分开 滤波可以删掉特定的频率内容 滤波 = 卷积 = 平均 时域上的卷积 = 频域上的乘积，时域上的乘积 = 频域上的卷积 采样 = 重复频域上的内容 走样 = 复制粘贴频谱时离得不够开，产生了重叠  减少走样  方法1：增加采样率 方法2：反走样（去掉容易重叠的高频率部分后采样）  反走样 MultiSample Antialiasing（MSAA）  没有真正提高分辨率 通过把一个像素划分为一些子像素，算得子像素在三角形内部的覆盖率（类似于做模糊操作） 根据覆盖率计算该像素的颜色（采样） 代价：增大计算量 工业上不一定规则划分子像素  Fast Approximate AA（FXAA）  做图像的后期处理  Temporal AA（TAA）  考虑上一帧的信息进行复用  Super sampling  Deep Learning Super Sampling（DLSS）  </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture05</title>
+      <link>https://5rLku.github.io/article/games101_lecture05/</link>
+      <pubDate>Mon, 20 Feb 2023 15:42:39 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture05/</guid>
+      <description>Rasterization 1 (Triangles) 透视投影  field-of-view： frustum 两侧边中点和摄像机的连线夹角（？虎书看着是到近平面） aspect ratio：宽高比 定义这两个等效于定义 l，r，b，t 理解：定义 n 和 fovY，可算出 b，t，通过 aspect ratio 可算出 l，r  Viewport 屏幕  像素：红蓝绿混合的小方块 屏幕空间：左下角原点，向右向上延伸 约定：像素坐标范围 (0, 0) - (width - 1, height - 1)，像素中心为 (x + 0.5, y + 0.5)，屏幕范围 (0, 0) - (width, height)  视口变换  canonical cube $[-1,1]^2$到 screen $[0,width]\times[0,height]$ 矩阵：先缩放，再平移  光栅化  三角形图元好处  一定是平面 内外好判断 内部好插值   判断像素（中心点）和三角形的位置关系  采样  把函数离散化的过程 像素中心点在三角形内部，则像素 = 1，否则 = 0 判断点是否在内部  先决定三角形顶点顺序（顺/逆时针） 依次把三条边和点进行三次叉乘（$P_0P_1 \times P_0Q$，类推） 若三次正负均相等，则在内部，否则在外部   点落在边上，要么不处理（这门课），要么特殊处理（OpenGL，DX） 加速：轴向包围盒（axis-aligned bounding box，AABB），只扫描包围盒内的像素 加速：每行记录最左最右，只扫描这些像素  </description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture04</title>
+      <link>https://5rLku.github.io/article/games101_lecture04/</link>
+      <pubDate>Sat, 18 Feb 2023 19:56:20 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture04/</guid>
+      <description>Transformation Cont. 上节课补充  旋转 $-\theta$ 的旋转矩阵 = 旋转 $\theta$ 的旋转矩阵的转置和逆 矩阵的转置 = 矩阵的逆，矩阵为正交矩阵  三维变换  绕轴旋转：轴对应的坐标不变，在另两个轴组成的平面上旋转（矩阵上能体现）[绕 y 轴有点不一样，取的是 $-\theta$，因为逆时针为 z &amp;ndash;&amp;gt; x] 组合旋转：拆分为绕轴旋转的组合，欧拉角，raw、pitch、yaw Rodrigue&amp;rsquo;s Rotation Formula：绕任意轴 n 旋转 a 角 四元数：主要解决旋转插值  View  model - view - projection = 放物体 - 放相机 - 拍照 定义相机  Position Look-at Up direction   关键概念  固定物体移动相机等效于固定相机移动物体 固定相机 Position 在原点，Look-at 到 -z，Up direction 为 y   操作  移动相机到原点 旋转相机 Look-at 到 -z，Up direction 到 y -z 旋转到 Look-at，y 旋转到 Up direction 更好求，求出来再取逆（类似之前的取特殊点法，注意旋转矩阵为正交矩阵）    Projection  正交和透视投影（是否近大远小）  正交投影  直观操作  相机摆放到标准位置 丢掉 z 坐标 x，y 都平移且缩放到 [-1, 1]   把 cuboid $[l, r] \times [b, t] \times [f, n]$ （near &amp;gt; far 因为 -z，OpenGL 则用左手系去避免这一点）映射到 canonical cube $[-1, 1]^3$ 实际操作  平移 cuboid 到原点 缩放到 canonical cube 大小 矩阵：先每组边中点平移到 0，再每组边长缩放到 2    透视投影  透视近大远小是因为 frustum 远平面大，近平面小，两者上面的点需要一一进行对应，相同长度的线在远平面上会被对应为更短的线（相同长度的近平面的线保持不变） 操作  把 frustum 挤压成 cuboid 做正交投影   规定：近平面大小不变，挤压时远平面 z 不发生改变，远平面中心点不变 计算  由相似三角形得到 $y\prime = {n\over z} y，x\prime = {n\over z} x$ $ M^{(4\times4)}_{persp\to ortho}\begin{pmatrix} x \\ y \\ z \\ 1 \end{pmatrix}=\begin{pmatrix} {n\over z}x \\ {n\over z}y \\ ?</description>
+    </item>
+    
+    <item>
+      <title>GAMES101_Lecture03</title>
+      <link>https://5rLku.github.io/article/games101_lecture03/</link>
+      <pubDate>Sat, 18 Feb 2023 19:56:16 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/games101_lecture03/</guid>
+      <description>Transformation Model  平移，旋转，缩放 线性变换 = 矩阵 可以用特殊点推导出变换矩阵 齐次坐标  平移无法写成矩阵形式 目的：为了使用统一的变换表达方式 添加一个维度 w，w = 0 为向量，w = 1 为点 vec + vec = vec (0 + 0 = 0)，pts - pts = vec (1 - 1 = 0) pts + vec = pts (1 + 0 = 1)，pts + pts = 中点 (1 + 1 = 2) [ pts: (x, y, w) = (x/w, y/w, 1) ] 仿射变换 = 线性变换 + 平移，齐次坐标下转换为矩阵形式   逆变换：乘以逆矩阵 变换组合  复杂变换可以组合 变换顺序重要（矩阵乘法不满足交换律） 矩阵连乘时从右到左依次应用到点/向量上 连续变换可以提前相乘为一个变换矩阵（矩阵乘法满足结合律）   变换分解  绕特定点旋转 = 把特定点平移到原点 + 绕原点旋转 + 平移回去   三维变换  齐次为 4x4 矩阵 仿射变换矩阵最后一行 0 0 0 1，最后一列为 平移量，左上角为线性变换矩阵 先线性变换，再平移    </description>
+    </item>
+    
     <item>
       <title>GAMES101_Lecture02</title>
       <link>https://5rLku.github.io/article/games101_lecture02/</link>
       <pubDate>Wed, 15 Feb 2023 11:24:41 +0800</pubDate>
       
       <guid>https://5rLku.github.io/article/games101_lecture02/</guid>
-      <description></description>
+      <description>Review of Linear Algebra 向量  起点和终点 方向和长度 无位置信息 单位向量：向量 / 向量长度，代表方向 默认为列向量 向量加法：几何上首尾相连，代数上坐标相加  向量点乘  $\vec{a} \dot{} \vec{b} = | \vec{a} | | \vec{b} | \cos \theta $ 满足交换律、分配律、结合律 对应坐标相乘后相加，是一个数 应用：找两向量夹角，找一个向量到另一个向量的投影 应用：衡量两个向量的接近程度，分解向量，决定前向/后向（点乘的正负）  向量叉乘  产生同时垂直于两个向量的第三个向量 $ \vec{a} \times \vec{b} = -\vec{b} \times \vec{a} $ 长度： $|\vec{a}\times\vec{b} | = |\vec{a}||\vec{b}|\sin \theta $，方向：右手定则 叉乘自己 = 0 满足分配律、结合律 应用：决定左/右，正在左，负在右 应用：决定内/外，点都在三条边的同一侧则点在三角形内部（结果为 0 判断为内外都行） 应用：建立直角坐标系  矩阵  数字的数组 加/乘一个数：每个元素都加/乘  矩阵乘法  A（M，N）X B（N，P）= C（M，P） C（i，j）= A（row i）和 B（col j） 的点乘结果 没有交换律 满足结合律、分配律 向量看为（m x 1）的矩阵 能用来变换点的坐标 转置：行列互换 $ (AB)^T = B^TA^T $ 单位矩阵 $ I $：对角线为 1，其他全为 0 $ AA^{-1} = A^{-1}A = I $ $ (AB)^{-1} = B^{-1}A^{-1}$ 向量点乘叉乘可以转换为矩阵乘法（点乘：转置，叉乘：dual matrix）  作业0 </description>
     </item>
     
     <item>
@@ -22,7 +258,7 @@
       <pubDate>Mon, 05 Sep 2022 21:41:48 +0800</pubDate>
       
       <guid>https://5rLku.github.io/article/games101_lecture01/</guid>
-      <description>什么是图形学  用计算机来合成和操作视觉信息  为什么学习图形学  全局光照的效果是一款游戏画面好坏的不错的技术判断标准 “The Quick Brown Fox Jumps Over The Lazy Dog” &amp;ndash; 字体测试常用，包含所有英文字母 技术挑战 1：Math of projections, curves, surfaces 技术挑战 2：Physics of lighting and shading 技术挑战 3：Representing / operating shapes in 3D 技术挑战 4：Animation / simulation 这门课不涉及3D图形软硬件编程（OpenGL，DX等） Computer Graphics is AWESOME！  课程内容  Rasterization 光栅化  投影几何图元（geometry primitives）到屏幕上 把图元拆分为片元（fragments） 电子游戏的金标准（Real-time 应用）   Curves and meshes 曲线和网格（几何）  如何在计算机图形学中表示几何形体   Ray tracing 光线追踪  从摄像机射出射线穿过每个像素  计算 intersection 和 shading continue to bounce 光线直到碰到光源   电影/动画的金标准（Offline 应用） Trade off：效果和时间 实时光线追踪   Animation / Simulation 动画和模拟  Key frame animation Mass-spring system   GAMES101 不包括：  Using OpenGL, DirectX, Vulkan  The syntax of Shaders Learn Graphics, not Graphics API 学完课程有能力去自学   3D Modeling（Maya, 3DS Max, Blender）和 VR/游戏开发（Unity，Unreal Engine） 计算机视觉和深度学习    课程细节  主页上 Reading 材料课前阅读 使用 IDE 不发布作业代码和答案（Codes and Solutions），只进行讨论和解释（Discussion and Explanation）  </description>
+      <description>Overview of Computer Graphics 什么是图形学  用计算机来合成和操作视觉信息  为什么学习图形学  全局光照的效果是一款游戏画面好坏的不错的技术判断标准 “The Quick Brown Fox Jumps Over The Lazy Dog” &amp;ndash; 字体测试常用，包含所有英文字母 技术挑战 1：Math of projections, curves, surfaces 技术挑战 2：Physics of lighting and shading 技术挑战 3：Representing / operating shapes in 3D 技术挑战 4：Animation / simulation 这门课不涉及3D图形软硬件编程（OpenGL，DX等） Computer Graphics is AWESOME！  课程内容  Rasterization 光栅化  投影几何图元（geometry primitives）到屏幕上 把图元拆分为片元（fragments） 电子游戏的金标准（Real-time 应用）   Curves and meshes 曲线和网格（几何）  如何在计算机图形学中表示几何形体   Ray tracing 光线追踪  从摄像机射出射线穿过每个像素  计算 intersection 和 shading continue to bounce 光线直到碰到光源   电影/动画的金标准（Offline 应用） Trade off：效果和时间 实时光线追踪   Animation / Simulation 动画和模拟  Key frame animation Mass-spring system   GAMES101 不包括：  Using OpenGL, DirectX, Vulkan  The syntax of Shaders Learn Graphics, not Graphics API 学完课程有能力去自学   3D Modeling（Maya, 3DS Max, Blender）和 VR/游戏开发（Unity，Unreal Engine） 计算机视觉和深度学习    课程细节  主页上 Reading 材料课前阅读 使用 IDE 不发布作业代码和答案（Codes and Solutions），只进行讨论和解释（Discussion and Explanation）  </description>
     </item>
     
   </channel>

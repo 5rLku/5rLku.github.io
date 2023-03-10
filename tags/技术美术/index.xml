@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>技术美术 on 5rLku</title>
+    <link>https://5rLku.github.io/tags/%E6%8A%80%E6%9C%AF%E7%BE%8E%E6%9C%AF/</link>
+    <description>Recent content in 技术美术 on 5rLku</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 Mar 2023 13:21:23 +0800</lastBuildDate><atom:link href="https://5rLku.github.io/tags/%E6%8A%80%E6%9C%AF%E7%BE%8E%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Portfolio</title>
+      <link>https://5rLku.github.io/article/portfolio/</link>
+      <pubDate>Fri, 10 Mar 2023 13:21:23 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/portfolio/</guid>
+      <description>技术美术作品集 Curl-noise 速度场流体 OpenGL .video-shortcode {position: relative;	max-width: 90%;height: auto;}There should have been a video here but your browser does not seemto support it.curl-noise 噪声速度场 .video-shortcode {position: relative;	max-width: 90%;height: auto;}There should have been a video here but your browser does not seemto support it.curl-noise 障碍球速度场  Perlin Noise 生成 curl-noise  复现论文《Curl-Noise for Procedural Fluid Flow》 对噪声场求其旋度场，该旋度场的散度处处为 0 ，可以模拟流体粒子的流动 对旋度场调制，生成含障碍物的速度场    Houdini .</description>
+    </item>
+    
+    <item>
+      <title>TA_100_Arts</title>
+      <link>https://5rLku.github.io/article/ta_100_arts/</link>
+      <pubDate>Wed, 08 Mar 2023 21:32:45 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/ta_100_arts/</guid>
+      <description>百人计划_美术笔记 1.1 美术理论基础 光影  黑白灰 明暗五调子：高光、亮面、灰面、明暗交界线、暗面  透视  平行透视：一点透视，物体在远处消失于一个点 成角透视：两点透视，物体在远处向两个点消失（左右） 三点透视：在竖直方向上再多一消失点 散点透视：不同物体不同透视，国画常见 空气透视：色彩透视，烟雾等 达芬奇：色彩、消逝（清晰度）、线（大小）  色彩  色相、饱和度、明度 三原色：光学三原色RGB（叠加白）、颜料三原色CMY（叠加黑） 间色：两种原色叠加 复色：原+间 / 间 + 间 同类色：同色相不同倾向（60 度） 互补色：色相环距离 180 度，对比强烈 对比色：120 - 180 度  构图  zelda：三角设计原则  镜头语言  广角、长焦 拉（远离）、移（移动）、跟拍（跟随）、摇（选装）、升降（Y轴）、推（接近）  游戏美术概念设计  确定风格：用户群、游戏理念、平台性能 分类：东、西、卡通、写实  补充  脏、乱、散  1.2 角色设计精要  角色关键词（独一无二） 素材和灵感（基于已有） 构图设计（轮廓剪影、内在构成）  轮廓：基础形状 构成：点、线、面、简繁比重、疏密   配色（传达感受） 服装设计（角色性格、细节信息）  1.3 场景设计精要  主题 风格 设计构图：  三分法：重点放在 1/3 处 环形法：道路感、距离感、聚焦中心、封闭感 对称：平静稳定、但单一不生动 垂直线：节奏感（长短粗细） 水平线：平稳舒展（不宜过多过密） 十字分割：集中于一点 视觉引导线：引导到重点   速涂场景剪影  统一中求变 辨识度 问题  杂乱无章（要凸出核心） 变化单一（角度、间隔）   迭代  添加元素 局部变形、替换     剪影内切  分主次结构 - 定明暗 - 优化调子疏密等 三分法重心部位要突起   前景场景和纵深  前景  主体前面 衬托 符合主题   后景产生纵深   场景色彩分类  比例：70：25：5 - 主色：辅助色：点缀色 搭配：相邻色、间隔色、互补色 冷、暖、中性（黑白灰） 叠色：黑白灰 + 叠色   光影氛围  打光（正光、逆光） 光影分割    2.</description>
+    </item>
+    
+    <item>
+      <title>TA_100_Graphics</title>
+      <link>https://5rLku.github.io/article/ta_100_graphics/</link>
+      <pubDate>Thu, 02 Mar 2023 22:08:44 +0800</pubDate>
+      
+      <guid>https://5rLku.github.io/article/ta_100_graphics/</guid>
+      <description>百人计划_图形查漏笔记 1.1 渲染流水线  应用阶段  粗粒度剔除：直接剔除视锥体外的物体   几何阶段  顶点 shader &amp;mdash; 几何 shader &amp;mdash; 曲面细分 shader &amp;mdash; 投影 &amp;mdash; 裁剪 &amp;mdash; 屏幕映射 几何 shader：图元着色 或者 基于图元产生新图元 裁剪：  视锥体裁剪：剔除视锥体外的顶点，在边界上产生新顶点 正面背面的 culling：根据三角形顶点的顺逆时针决定正背面，选择是否渲染正背面     光栅化  三角形设置 &amp;mdash; 三角形遍历 &amp;mdash; 片元shader &amp;mdash; 逐片元操作 抗锯齿：  SSAA 在光栅化前扩大 buffer，光栅化后下采样 MSAA 在光栅化时建立子像素，根据覆盖率决定像素颜色 FXAA/TXAA 属于图像操作，后处理   逐片元操作  决定最终像素 OpenGL 顺序：  scissor test：自定义的不绘制区域 alpha test stencil test depth test blend        1.</description>
+    </item>
+    
+  </channel>
+</rss>
